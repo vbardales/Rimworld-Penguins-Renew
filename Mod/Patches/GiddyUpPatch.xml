@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+  <!-- Where a rider sits on a penguin, for Giddy-Up.
+
+       The original of this patch never fired, for three separate reasons. It guarded on a mod
+       called "Giddy-up! Core", which no longer exists; it added a mod extension of class
+       GiddyUpCore.DrawingOffsetPatch, which the 1.6 assembly no longer defines; and its xpath
+       asked for a ThingDef named "King_penguin" when the def is king_penguin. defNames are
+       case-sensitive, so that last one had never matched anything, in any version.
+
+       It is also on the wrong animal. Giddy-Up 2 makes an animal mountable by default when
+       race.baseBodySize is greater than 1.2 (GiddyUp.Setup), so the king penguin at 0.35 is not
+       a mount and cannot become one without a GiddyUp.Mountable extension. The emperor penguin,
+       at 1.35, is - and it is the one that has pack textures.
+
+       The guard tests one of Giddy-Up's own defs rather than its display name: PatchOperationFindMod
+       compares against ModMetaData.Name, an exact string that belongs to whoever is maintaining the
+       fork this month. The extension class itself must stay inside <value>, which is an XmlContainer
+       and is not resolved until the operation applies - a modExtension whose class cannot be found
+       fails the whole def it was added to, penguin included. -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ConceptDef[defName="GUC_Animal_Handling"]</xpath>
+    <match Class="PatchOperationAddModExtension">
+      <xpath>Defs/ThingDef[defName="emperor_penguin"]</xpath>
+      <value>
+        <li Class="GiddyUp.DrawingOffset">
+          <!-- x sideways, y draw altitude, z vertical. The x and z are the author's own, carried
+               over from the CSV form the old class used. The y was -1 there; Giddy-Up 2 ships 0
+               for every one of the animals it offsets itself and settles draw order in the render
+               nodes instead, so it is 0 here too. -->
+          <northOffset>(0.00, 0.00, -0.50)</northOffset>
+          <southOffset>(0.00, 0.00, -0.30)</southOffset>
+          <eastOffset>(0.20, 0.00, -0.20)</eastOffset>
+          <westOffset>(-0.20, 0.00, -0.20)</westOffset>
+        </li>
+      </value>
+    </match>
+  </Operation>
+
+</Patch>

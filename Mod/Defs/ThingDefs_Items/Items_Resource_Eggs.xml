@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- The mod used to declare its own EggBase, EggUnfertBase and EggFertBase - the names Core
+       already uses for the abstract parents of every egg in the game. Two abstract defs sharing a
+       Name are not an error: XmlInheritance.GetBestParentFor picks the one from the mod with the
+       highest loadOrder at or below the def's own, so this mod's eggs got these copies, and so did
+       the eggs of every mod loaded after it.
+
+       That last part is the problem. The copies were not faithful - the fertilized base is safe
+       from -30 to +10 degrees where Core's is 0 to +50 - so any later mod's fertilized egg would
+       silently have been ruined by room temperature.
+
+       EggBase and EggUnfertBase were copies of Core's with nothing changed, so they are gone and
+       the eggs below inherit Core's directly. Only the temperature range was deliberate, and it
+       is kept here under a name of this mod's own. -->
+  <ThingDef Abstract="True" Name="Penguins_EggFertBase" ParentName="EggBase">
+    <tickerType>Normal</tickerType>
+    <ingestible>
+      <preferability>DesperateOnly</preferability>
+    </ingestible>
+    <thingCategories>
+      <li>EggsFertilized</li>
+    </thingCategories>
+    <comps>
+      <li Class="CompProperties_TemperatureRuinable">
+        <minSafeTemperature>-30</minSafeTemperature>
+        <maxSafeTemperature>10</maxSafeTemperature>
+        <progressPerDegreePerTick>0.00003</progressPerDegreePerTick>
+      </li>
+    </comps>
+  </ThingDef>
+
+
+  <ThingDef ParentName="EggUnfertBase">
+    <defName>king_penguinUnfertilized</defName>
+    <label>king penguin egg (unfert.)</label>
+    <description>An unfertilized king penguin egg. It can be eaten raw, but it's much, much better cooked.</description>
+    <graphicData>
+      <color>(228,185,135)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>10.0</MarketValue>
+    </statBases>
+  </ThingDef>
+
+  <ThingDef ParentName="Penguins_EggFertBase">
+    <defName>king_penguinFertilized</defName>
+    <label>king penguin egg (fert.)</label>
+    <description>A fertilized king penguin egg. With time, it should hatch into a baby penguin. It can be eaten raw, but it's much better cooked.</description>
+    <graphicData>
+      <color>(239,234,215)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>15.0</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>5</hatcherDaystoHatch>
+        <hatcherPawn>king_penguin</hatcherPawn>
+      </li>
+    </comps>
+  </ThingDef>
+
+
+  <ThingDef ParentName="EggUnfertBase">
+    <defName>emperor_penguinUnfertilized</defName>
+    <label>emperor penguin egg (unfert.)</label>
+    <description>An unfertilized emperor penguin egg. It can be eaten raw, but it's much, much better cooked.</description>
+    <graphicData>
+      <color>(228,185,135)</color>
+      <drawSize>0.95</drawSize>
+    </graphicData>
+    <statBases>
+      <MarketValue>20.0</MarketValue>
+    </statBases>
+  </ThingDef>
+
+  <ThingDef ParentName="Penguins_EggFertBase">
+    <defName>emperor_penguinFertilized</defName>
+    <label>emperor penguin egg (fert.)</label>
+    <description>A fertilized emperor penguin egg. With time, it should hatch into a baby penguin. It can be eaten raw, but it's much better cooked.</description>
+    <graphicData>
+      <color>(239,234,215)</color>
+      <drawSize>0.95</drawSize>
+    </graphicData>
+    <statBases>
+      <MarketValue>55.0</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>15</hatcherDaystoHatch>
+        <hatcherPawn>emperor_penguin</hatcherPawn>
+      </li>
+    </comps>
+  </ThingDef>
+
+</Defs>

@@ -1,0 +1,68 @@
+MIT License
+
+Copyright (c) 2026 nelim
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+
+---------------------------------------------------------------------------
+SCOPE OF THE ABOVE
+
+The MIT licence above covers only what the 1.6 port added:
+
+  - the corrections to the defs: wildness moved from a race property to the
+    Wildness stat on both penguins, and the mod's redeclarations of Core's
+    abstract egg bases removed - two deleted outright, the third kept under a
+    name of its own, Penguins_EggFertBase
+  - the rewritten Giddy-Up patch, which targets Giddy-Up 2's GiddyUp.Drawing-
+    Offset on the emperor penguin instead of a class that no longer exists on
+    a defName that never existed, and guards on one of Giddy-Up's own defs
+    instead of on its display name
+  - the replacement of the source mod's four sound defs with Core's own
+    waterfowl - see below for why they are not here
+  - the corrected labels, and the renaming of the emperor penguin's pack
+    texture to the facing suffix the game actually reads
+  - the French translation
+  - the packaging and the documentation
+
+IT DOES NOT COVER THE ORIGINAL MOD. The two penguins, their stats, their eggs
+and their ten textures are Peso penguin's work, reused here:
+
+  https://steamcommunity.com/sharedfiles/filedetails/?id=3477589277
+
+They never declared a licence for it, so none is granted here and none can be.
+It is redistributed under the usual practice for abandoned mods - explicit
+credit, a link to the original, and removal on request. About/Preview.png is
+theirs as it stands.
+
+If Peso penguin asks for this to be taken down, it comes down. Immediately,
+and without discussion.
+
+
+ONE THING WAS DELIBERATELY LEFT BEHIND
+
+The source mod shipped four sound files and four SoundDefs named
+AEXP_Pawn_Penguin_*. Those are Vanilla Animals Expanded's: the defNames are
+its own, and the .ogg files are byte-identical to its. Vanilla Animals
+Expanded is alive, declares 1.6, and is CC BY-NC-ND 4.0 - a named licence
+with No Derivatives - so none of it is redistributed here, and no permission
+over it is granted or implied by anything above. The penguins use Core's
+Pawn_Duck_* and Pawn_Goose_* instead.
+
+ATTRIBUTION.md records what was taken and what was changed.

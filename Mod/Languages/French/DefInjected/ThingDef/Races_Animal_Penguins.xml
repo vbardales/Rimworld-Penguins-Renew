@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- "Penguin" is two different birds in French. The flightless southern-hemisphere ones -
+       Aptenodytes and their relatives - are manchots; pingouin is the northern auk. Both species
+       here are Aptenodytes, so both are manchots. -->
+
+  <!-- EN: king penguin -->
+  <king_penguin.label>manchot royal</king_penguin.label>
+  <!-- EN: The king penguin (Aptenodytes patagonicus) is the second largest species of penguin. -->
+  <king_penguin.description>Le manchot royal (Aptenodytes patagonicus) est la deuxième plus grande espèce de manchot.</king_penguin.description>
+  <!-- EN: claws -->
+  <king_penguin.tools.claws.label>griffes</king_penguin.tools.claws.label>
+  <!-- EN: head -->
+  <king_penguin.tools.head.label>tête</king_penguin.tools.head.label>
+
+  <!-- EN: emperor penguin -->
+  <emperor_penguin.label>manchot empereur</emperor_penguin.label>
+  <!-- EN: The emperor penguin (Aptenodytes forsteri) is the tallest and heaviest of all living penguin species and is endemic to Antarctica. How it end up in rimworld.  but nobody knows. -->
+  <emperor_penguin.description>Le manchot empereur (Aptenodytes forsteri) est la plus grande et la plus lourde des espèces de manchots vivantes, et il est endémique de l'Antarctique. Comment il a atterri sur ce monde, nul ne le sait.</emperor_penguin.description>
+  <!-- EN: claws -->
+  <emperor_penguin.tools.claws.label>griffes</emperor_penguin.tools.claws.label>
+  <!-- EN: head -->
+  <emperor_penguin.tools.head.label>tête</emperor_penguin.tools.head.label>
+
+</LanguageData>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- The life stages carry no label of their own in the defs, so they are keyed by index, which
+       is how the game's own French keys the cassowary and the emu. -->
+
+  <!-- EN: king penguin -->
+  <king_penguin.label>manchot royal</king_penguin.label>
+  <king_penguin.labelMale>manchot royal</king_penguin.labelMale>
+  <king_penguin.labelMalePlural>manchots royaux</king_penguin.labelMalePlural>
+  <king_penguin.labelPlural>manchots royaux</king_penguin.labelPlural>
+  <king_penguin.lifeStages.0.label>bébé manchot royal</king_penguin.lifeStages.0.label>
+  <king_penguin.lifeStages.0.labelMale>bébé manchot royal</king_penguin.lifeStages.0.labelMale>
+  <king_penguin.lifeStages.0.labelMalePlural>bébés manchots royaux</king_penguin.lifeStages.0.labelMalePlural>
+  <king_penguin.lifeStages.0.labelPlural>bébés manchots royaux</king_penguin.lifeStages.0.labelPlural>
+  <king_penguin.lifeStages.1.label>jeune manchot royal</king_penguin.lifeStages.1.label>
+  <king_penguin.lifeStages.1.labelMale>jeune manchot royal</king_penguin.lifeStages.1.labelMale>
+  <king_penguin.lifeStages.1.labelMalePlural>jeunes manchots royaux</king_penguin.lifeStages.1.labelMalePlural>
+  <king_penguin.lifeStages.1.labelPlural>jeunes manchots royaux</king_penguin.lifeStages.1.labelPlural>
+  <king_penguin.lifeStages.2.label>manchot royal</king_penguin.lifeStages.2.label>
+  <king_penguin.lifeStages.2.labelMale>manchot royal</king_penguin.lifeStages.2.labelMale>
+  <king_penguin.lifeStages.2.labelMalePlural>manchots royaux</king_penguin.lifeStages.2.labelMalePlural>
+  <king_penguin.lifeStages.2.labelPlural>manchots royaux</king_penguin.lifeStages.2.labelPlural>
+
+  <!-- EN: emperor penguin -->
+  <emperor_penguin.label>manchot empereur</emperor_penguin.label>
+  <emperor_penguin.labelMale>manchot empereur</emperor_penguin.labelMale>
+  <emperor_penguin.labelMalePlural>manchots empereurs</emperor_penguin.labelMalePlural>
+  <emperor_penguin.labelPlural>manchots empereurs</emperor_penguin.labelPlural>
+  <emperor_penguin.lifeStages.0.label>bébé manchot empereur</emperor_penguin.lifeStages.0.label>
+  <emperor_penguin.lifeStages.0.labelMale>bébé manchot empereur</emperor_penguin.lifeStages.0.labelMale>
+  <emperor_penguin.lifeStages.0.labelMalePlural>bébés manchots empereurs</emperor_penguin.lifeStages.0.labelMalePlural>
+  <emperor_penguin.lifeStages.0.labelPlural>bébés manchots empereurs</emperor_penguin.lifeStages.0.labelPlural>
+  <emperor_penguin.lifeStages.1.label>jeune manchot empereur</emperor_penguin.lifeStages.1.label>
+  <emperor_penguin.lifeStages.1.labelMale>jeune manchot empereur</emperor_penguin.lifeStages.1.labelMale>
+  <emperor_penguin.lifeStages.1.labelMalePlural>jeunes manchots empereurs</emperor_penguin.lifeStages.1.labelMalePlural>
+  <emperor_penguin.lifeStages.1.labelPlural>jeunes manchots empereurs</emperor_penguin.lifeStages.1.labelPlural>
+  <emperor_penguin.lifeStages.2.label>manchot empereur</emperor_penguin.lifeStages.2.label>
+  <emperor_penguin.lifeStages.2.labelMale>manchot empereur</emperor_penguin.lifeStages.2.labelMale>
+  <emperor_penguin.lifeStages.2.labelMalePlural>manchots empereurs</emperor_penguin.lifeStages.2.labelMalePlural>
+  <emperor_penguin.lifeStages.2.labelPlural>manchots empereurs</emperor_penguin.lifeStages.2.labelPlural>
+
+</LanguageData>
