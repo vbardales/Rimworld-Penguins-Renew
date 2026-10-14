@@ -1,4 +1,7 @@
-# the Penguins mod 1.6
+# the Penguins mod Renew (unofficial)
+
+UNOFFICIAL. This mod is published without the original author's explicit consent.
+If the original author contacts me to request its removal, I undertake to take it down promptly.
 
 Port of **Peso penguin's the Penguins mod** to RimWorld 1.6.
 
@@ -174,8 +177,7 @@ byte for byte.
 ## What did not change
 
 Every stat, tool, life stage, draw size, biome weight, trade tag, egg interval and market value is
-as Peso penguin left it. So is `About/Preview.png`, their own in-game showcase, and every texture
-file.
+as Peso penguin left it. Every gameplay texture is also unchanged. The port now has its own generated showcase; the original Preview is archived under `Art/`.
 
 Three things were noticed and deliberately left alone:
 
@@ -254,4 +256,4 @@ texture, which needs an emperor penguin carrying something. Both want a look in-
 See [ATTRIBUTION.md](ATTRIBUTION.md) for the licence position and what exactly was carried over.
 
 The port work was done with the help of an AI assistant (Claude, by Anthropic), under human
-direction and in-game testing.
+direction; final in-game validation is pending.

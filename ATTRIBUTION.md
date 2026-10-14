@@ -3,7 +3,7 @@
 A 1.6 port of **the Penguins mod**, by **Peso penguin**
 ([3477589277](https://steamcommunity.com/sharedfiles/filedetails/?id=3477589277)).
 
-## Status: public
+## Status: public, unofficial
 
 The source mod is **dead** — posted 7 May 2025, declaring 1.5 and nothing further, never updated
 since — and **no licence is declared anywhere**, checked at the four places one could be:
@@ -27,6 +27,15 @@ name** and **removal on request, without argument**. The `<author>` field reads
 
 Their Workshop account is named **Neal the gull**; `Peso penguin` is the name written in the mod's
 own `About.xml`, so that is the name credited.
+
+## Presentation update — 2026-09-13
+
+The current icon is a user-supplied generated penguin mascot, preserved in
+`Art/ModIcon-source.png` with its original prompt. The new snowy colony Preview was
+generated with OpenAI image_gen and composed with Segoe UI text. These presentation
+assets are separate from Peso penguin's unchanged gameplay textures. The original
+Preview is preserved at `Art/Preview-upstream.png`. The historical notes below describe
+the earlier packaging and remain as provenance, not the current asset inventory.
 
 ## Where it came from
 

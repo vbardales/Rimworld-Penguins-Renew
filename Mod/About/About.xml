@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
   <packageId>nelim.penguins</packageId>
-  <name>the Penguins mod 1.6</name>
+  <name>the Penguins mod Renew (unofficial)</name>
   <author>Peso penguin - 1.6 adapted by Nelim</author>
   <supportedVersions>
     <li>1.6</li>
@@ -10,7 +10,10 @@
   <incompatibleWith>
     <li>Pesopenguin.thePenguinsmod</li>
   </incompatibleWith>
-  <description>Two penguins for the cold maps. A king penguin, small and sociable, that nuzzles and lays an egg every twelve days; and an emperor penguin, tall, carnivorous, trainable to Advanced, and strong enough to carry a caravan's load.
+  <description>UNOFFICIAL. This mod is published without the original author's explicit consent.
+If the original author contacts me to request its removal, I undertake to take it down promptly.
+
+Two penguins for the cold maps. A king penguin, small and sociable, that nuzzles and lays an egg every twelve days; and an emperor penguin, tall, carnivorous, trainable to Advanced, and strong enough to carry a caravan's load.
 
 Both spawn wild on sea ice, ice sheet, tundra, boreal forest and cold bog. No DLC, no dependencies, no assembly, no research. Eight defs, ten textures and one optional patch.
 
@@ -52,9 +55,10 @@ The two mods cannot run together - the original is declared incompatible above. 
 
 Content mod: removing it mid-save destroys any penguin already in the colony.
 
-Source, changelog and attribution: https://github.com/vbardales/Rimworld-Penguins-Renew
 
-The port work was done with the help of an AI assistant (Claude, by Anthropic), under human direction and in-game testing. Thanks to Peso penguin for the birds.
+The port work was done with the help of an AI assistant (Claude, by Anthropic), under human direction; final in-game validation is pending. Thanks to Peso penguin for the birds.
 
-If I do not answer within a reasonable time after being contacted, anyone may freely update this or any other of my mods, including publishing a continuation of it. All credit must be preserved.</description>
+If I do not answer within a reasonable time after being contacted, anyone may freely update this or any other of my mods, including publishing a continuation of it. All credit must be preserved.
+
+[url=https://github.com/vbardales/Rimworld-Penguins-Renew]Source code on GitHub[/url]</description>
 </ModMetaData>

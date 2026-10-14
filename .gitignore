@@ -37,3 +37,12 @@ PROMPT_*.md
 Thumbs.db
 desktop.ini
 .DS_Store
+
+# Build intermediates (renamed from .build/, owner rule 2026-10-10).
+build/
+
+# Compiled textures.
+*.dds
+
+# Preview render intermediates.
+Art/.render/
