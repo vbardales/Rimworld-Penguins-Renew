@@ -18,7 +18,6 @@ workshop: 3811404080
 published: unverified
 tested_on:
 remaining:
-  - "2026-10-14: defect: ModIcon-source.png has excessive transparent padding and Render-Preview QA refuses it; needs the owner's explicit badge mode request (PUBLISHING.md)"
   - "2026-10-14: defect: About.xml description names 1.6 and 1.7 (rimworld-version WARN)"
   - "2026-10-14: feature: Pickle suites for the in-game scenarios of TEST_SCENARIOS.md, or a written reason they do not apply"
   - "2026-10-14: unverified: Giddy-Up 2 optional integration class and guard (no 1.6 Giddy-Up installed)"
@@ -30,6 +29,10 @@ updated: 2026-10-14
 ---
 
 # the Penguins mod 1.6 (unofficial) — status
+
+## ModIcon source trim — 2026-10-15
+
+Badge mode run on the owner's explicit request (2026-10-15): `Art/ModIcon-source.png` transparent border cropped in place, 1254x1254 to 1049x1071 (the original stays in git, commit e387ad6). ModIcon.png, ModIcon.ico, Preview.png, Preview.ico and `Art/Gallery/0-preview.png` regenerated; the Preview QA passes.
 
 ## Tests written — 2026-10-14
 
