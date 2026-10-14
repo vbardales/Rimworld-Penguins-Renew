@@ -8,6 +8,7 @@ All notable changes to this mod are documented here.
 - Standalone repository with its own history; build and render intermediates are ignored.
 - New generated colony Preview (896 x 504, title, summary, icon badge) and a 128 x 128 transparent ModIcon, both derived from the sources kept under `Art/`. The original Preview survives only in the git history (commit `e754e1f`).
 - Optional patch for A Dog Said... Animal Prosthetics 2: both penguins can receive its animal surgeries (categories 1 and 2), with `loadBefore` in `About.xml`. No effect without that mod.
+- French egg descriptions reworded as full sentences with an article.
 - Gameplay files are otherwise unchanged.
 - Final in-game validation remains pending.
 

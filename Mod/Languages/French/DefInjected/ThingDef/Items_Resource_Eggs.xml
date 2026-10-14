@@ -1,27 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
-  <!-- Worded like the game's own egg entries: "Œuf de X fécondé. Si tout se passe bien, il devrait
-       en éclore un bébé X." -->
+  <!-- Egg descriptions open with an article ("Un œuf de X fécondé.") and keep full sentences; reviewed wording of 2026-10-14. -->
 
   <!-- EN: king penguin egg (unfert.) -->
   <king_penguinUnfertilized.label>œuf de manchot royal (non fécondé)</king_penguinUnfertilized.label>
   <!-- EN: An unfertilized king penguin egg. It can be eaten raw, but it's much, much better cooked. -->
-  <king_penguinUnfertilized.description>Œuf de manchot royal non fécondé. Peut être mangé cru, mais c'est beaucoup mieux lorsqu'il est cuit.</king_penguinUnfertilized.description>
+  <king_penguinUnfertilized.description>Un œuf de manchot royal non fécondé. Il peut être mangé cru, mais il est bien meilleur cuit.</king_penguinUnfertilized.description>
 
   <!-- EN: king penguin egg (fert.) -->
   <king_penguinFertilized.label>œuf de manchot royal (fécondé)</king_penguinFertilized.label>
   <!-- EN: A fertilized king penguin egg. With time, it should hatch into a baby penguin. It can be eaten raw, but it's much better cooked. -->
-  <king_penguinFertilized.description>Œuf de manchot royal fécondé. Avec le temps, il devrait en éclore un bébé manchot. Peut être mangé cru, mais c'est beaucoup mieux lorsqu'il est cuit.</king_penguinFertilized.description>
+  <king_penguinFertilized.description>Un œuf de manchot royal fécondé. Avec le temps, un bébé manchot devrait en éclore. Il peut être mangé cru, mais il est bien meilleur cuit.</king_penguinFertilized.description>
 
   <!-- EN: emperor penguin egg (unfert.) -->
   <emperor_penguinUnfertilized.label>œuf de manchot empereur (non fécondé)</emperor_penguinUnfertilized.label>
   <!-- EN: An unfertilized emperor penguin egg. It can be eaten raw, but it's much, much better cooked. -->
-  <emperor_penguinUnfertilized.description>Œuf de manchot empereur non fécondé. Peut être mangé cru, mais c'est beaucoup mieux lorsqu'il est cuit.</emperor_penguinUnfertilized.description>
+  <emperor_penguinUnfertilized.description>Un œuf de manchot empereur non fécondé. Il peut être mangé cru, mais il est bien meilleur cuit.</emperor_penguinUnfertilized.description>
 
   <!-- EN: emperor penguin egg (fert.) -->
   <emperor_penguinFertilized.label>œuf de manchot empereur (fécondé)</emperor_penguinFertilized.label>
   <!-- EN: A fertilized emperor penguin egg. With time, it should hatch into a baby penguin. It can be eaten raw, but it's much better cooked. -->
-  <emperor_penguinFertilized.description>Œuf de manchot empereur fécondé. Avec le temps, il devrait en éclore un bébé manchot. Peut être mangé cru, mais c'est beaucoup mieux lorsqu'il est cuit.</emperor_penguinFertilized.description>
+  <emperor_penguinFertilized.description>Un œuf de manchot empereur fécondé. Avec le temps, un bébé manchot devrait en éclore. Il peut être mangé cru, mais il est bien meilleur cuit.</emperor_penguinFertilized.description>
 
 </LanguageData>
