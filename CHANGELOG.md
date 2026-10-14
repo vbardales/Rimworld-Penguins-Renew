@@ -2,12 +2,12 @@
 
 All notable changes to this mod are documented here.
 
-## [Unreleased] — 2026-09-13
+## [Unreleased] — 2026-10-14
 
-- Detached the local repository, preserving the existing GitHub history.
-- Added the required unofficial notices and final GitHub source link.
-- Replaced the upstream showcase with a generated colony illustration and added the penguin mascot icon. The icon source is kept under Art/; the original Preview survives only in the git history (commit `e754e1f`).
-- Added reproducible presentation tooling and functional validation scenarios.
+- Display name is now `the Penguins mod Renew (unofficial)`: the version number leaves the name, the unofficial suffix and opening notice are in `About.xml` and the README.
+- Standalone repository with its own history; build and render intermediates are ignored.
+- New generated colony Preview (896 x 504, title, summary, icon badge) and a 128 x 128 transparent ModIcon, both derived from the sources kept under `Art/`. The original Preview survives only in the git history (commit `e754e1f`).
+- Gameplay files are unchanged.
 - Final in-game validation remains pending.
 
 ## [1.0.0] — 2026-09-06
