@@ -2,19 +2,18 @@
 
 All notable changes to this mod are documented here.
 
-## [Unreleased] — 2026-10-14
-
-- Display name is now `the Penguins mod Renew (unofficial)`: the version number leaves the name, the unofficial suffix and opening notice are in `About.xml` and the README.
-- Standalone repository with its own history; build and render intermediates are ignored.
-- New generated colony Preview (896 x 504, title, summary, icon badge) and a 128 x 128 transparent ModIcon, both derived from the sources kept under `Art/`. The original Preview survives only in the git history (commit `e754e1f`).
-- Optional patch for A Dog Said... Animal Prosthetics 2: both penguins can receive its animal surgeries (categories 1 and 2), with `loadBefore` in `About.xml`. No effect without that mod.
-- French egg descriptions reworded as full sentences with an article.
-- Gameplay files are otherwise unchanged.
-- Final in-game validation remains pending.
-
-## [1.0.0] — 2026-09-06
+## [1.0.0] — unreleased
 
 First release. Port of Peso penguin's **the Penguins mod** to RimWorld 1.6.
+
+The port's own presentation and packaging, all in this first release:
+
+- Display name `the Penguins mod Renew (unofficial)`: no version number in the name, the unofficial suffix and opening notice are in `About.xml` and the README.
+- Standalone repository with its own history; build and render intermediates are ignored.
+- A generated colony Preview (896 x 504, title, summary, icon badge) and a 128 x 128 transparent ModIcon, both derived from the sources kept under `Art/`. Peso penguin's original Preview is not shipped; it survives only in the git history (commit `e754e1f`).
+- Optional patch for A Dog Said... Animal Prosthetics 2: both penguins can receive its animal surgeries (categories 1 and 2), with `loadBefore` in `About.xml`. No effect without that mod.
+- French egg descriptions are full sentences with an article.
+- Final in-game validation remains pending.
 
 ### Fixed
 
@@ -60,12 +59,7 @@ First release. Port of Peso penguin's **the Penguins mod** to RimWorld 1.6.
   states **CC BY-NC-ND 4.0** — a named No-Derivatives licence, which is the one case where this
   repository does not republish. Removing them also ends a duplicate-`defName` conflict with VAE
   and a shared sound-content path.
-- `About/ModIcon.png`, a 64 × 64 crop of the mod's own south-facing emperor penguin scaled to
-  128 px, added earlier in this same unreleased version. An icon cut from the source mod's art
-  makes the upstream author's work carry the port's identity, and the icon is the one file of a
-  port that is supposed to speak for the port rather than for the mod it carries. The mod ships
-  without one; RimWorld does not require it. `Art/Make-ModIcon.ps1` is kept.
-- `About/PublishedFileId.txt`: it names Peso penguin's Workshop item.
+- Peso penguin's `About/ModIcon.png` (a crop of their own emperor penguin) and their `About/PublishedFileId.txt`, which names their Workshop item. The port has its own ModIcon, generated for it.
 
 ### Changed
 
@@ -93,7 +87,7 @@ First release. Port of Peso penguin's **the Penguins mod** to RimWorld 1.6.
 - All eight `defName`s, so a save moves between the two mods without losing a bird. Checked
   against Core, every DLC, every subscribed Workshop mod and this repository: nothing else defines
   any of them.
-- Every texture, byte for byte, and `About/Preview.png`, Peso penguin's own.
+- Every gameplay texture, byte for byte.
 - `Dessicated_Penguin__south.png`, the dead duplicate. Two underscores, so it cannot load, and it
   is byte-identical to `Dessicated_Penguin_east.png`, so nothing is lost. Renaming it would not
   add a view; it would turn `ShouldDrawRotated` off for the corpse, because a distinct south
