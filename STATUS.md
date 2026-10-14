@@ -5,7 +5,7 @@ repo: Rimworld-Penguins-Renew
 remote: https://github.com/vbardales/Rimworld-Penguins-Renew.git
 visibility: public
 detached: yes
-workflow_stage: writeTests[1.0.0]
+workflow_stage: playTests[1.0.0]
 licence: silent
 licence_at: "2026-09-13: source mod 3477589277 declares only 1.5, no licence in four places (files, About.xml, linked repository, Steam description); not an authorisation"
 upstream_mod_remotes: N/A
@@ -19,7 +19,8 @@ published: unverified
 tested_on:
 remaining:
   - "2026-10-14: defect: About.xml description names 1.6 and 1.7 (rimworld-version WARN)"
-  - "2026-10-14: feature: Pickle suites for the in-game scenarios of TEST_SCENARIOS.md, or a written reason they do not apply"
+  - "2026-10-15: unverified: Giddy-Up 2 Pickle pass not written, no 1.6 Giddy-Up installed"
+  - "2026-10-15: unverified: every Pickle scenario and the 23 scenarios of TEST_SCENARIOS.md are unrun"
   - "2026-10-14: unverified: Giddy-Up 2 optional integration class and guard (no 1.6 Giddy-Up installed)"
   - "2026-10-14: unverified: Better Crossbreeding king x emperor pairing: owner decision"
   - "2026-10-14: unverified: no in-game results (FR/EN display, animals, eggs, pack rendering, sounds, riding, new game, existing save)"
@@ -38,7 +39,7 @@ Badge mode run on the owner's explicit request (2026-10-15): `Art/ModIcon-source
 
 - Functional scenarios: `TEST_SCENARIOS.md`, 23 in-game scenarios (7.a), figures read from the defs. None has run.
 - Automated and XML checks replayed at ae20da9 on the current files, all exit 0: `Check-XmlFields` (6 files), `Check-DefRefs` (with and without Core data), `Check-DefInjected` (48 keys, 0 errors), `Check-ConfigErrors`, `Check-TypeRefs` (7.b, 7.c). No C# build or unit suite applies to this source-free content mod; no artificial test was created (7.e).
-- Pickle suites (7.d): not written yet.
+- Pickle suites (7.d), written 2026-10-15, not run: `Tests/Pickle/` (5 features, 11 scenario blocks, 3 passes: without optional mods in English and French, ADS 2, the declared-incompatible original). Shared and PickleTools steps only, no local C#; `Check-Steps.ps1 -ModRoot PenguinsRenew` resolves all 85 step lines. Tested revision for 7.f: c16f12e35b357b8f27435ec020d3fe94c1787c1d. Not written, with reasons in `Tests/Pickle/README.md`: Giddy-Up 2 (no 1.6 build installed), eggs laid and hatched, nuzzling, training, pack facings and sounds (no shared step, manual scenarios).
 - Target version fixed at 1.0.0 (2026-10-14): no 1.0.0 was ever released, no tag exists, the former 1.0.1 label was wrong; CHANGELOG merged into one `[1.0.0] — unreleased` section.
 
 ## Translation audit — 2026-10-14

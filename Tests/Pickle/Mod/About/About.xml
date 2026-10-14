@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>the Penguins mod Renew - Pickle tests</name>
+  <author>Nelim</author>
+  <packageId>nelim.penguins.pickletests</packageId>
+  <supportedVersions>
+    <li>1.6</li>
+  </supportedVersions>
+  <description>In-game acceptance tests for the Penguins mod Renew. Development only; never published.</description>
+  <modDependencies>
+    <li>
+      <packageId>nelim.penguins</packageId>
+      <displayName>the Penguins mod Renew (unofficial)</displayName>
+    </li>
+    <li>
+      <packageId>rimworks.pickle</packageId>
+      <displayName>Pickle</displayName>
+      <steamWorkshopUrl>steam://url/CommunityFilePage/3791648678</steamWorkshopUrl>
+    </li>
+  </modDependencies>
+  <loadAfter>
+    <li>nelim.penguins</li>
+    <li>rimworks.pickle</li>
+  </loadAfter>
+</ModMetaData>

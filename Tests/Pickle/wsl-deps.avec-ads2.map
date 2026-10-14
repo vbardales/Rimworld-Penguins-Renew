@@ -1,0 +1,6 @@
+# Pass 2: this mod, THEN A Dog Said... Animal Prosthetics 2, the order About.xml declares with
+# loadBefore. ADS 2 copies its category lists once, at its own last patch, so a mod of the map that
+# must load after the mod under test obliges the map to NAME the mod under test, before it.
+nelim.pickletools.deffields path:PickleTools/DefFieldSteps/Mod
+nelim.penguins path:PenguinsRenew/Mod
+SamBucher.ADogSaidAnimalProsthetics2 3238353862

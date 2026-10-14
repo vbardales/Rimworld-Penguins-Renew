@@ -1,0 +1,5 @@
+# Pass 3: Peso penguin's original mod, then this port, which declares it incompatible
+# (incompatibleWith Pesopenguin.thePenguinsmod). Only 04-incompatible-original.feature is played in it.
+# Not a supported configuration.
+Pesopenguin.thePenguinsmod 3477589277
+nelim.penguins path:PenguinsRenew/Mod
