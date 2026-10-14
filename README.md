@@ -177,7 +177,7 @@ byte for byte.
 ## What did not change
 
 Every stat, tool, life stage, draw size, biome weight, trade tag, egg interval and market value is
-as Peso penguin left it. Every gameplay texture is also unchanged. The port now has its own generated showcase; the original Preview is archived under `Art/`.
+as Peso penguin left it. Every gameplay texture is also unchanged. The port now has its own generated showcase; the original Preview survives only in the git history (commit `e754e1f`).
 
 Three things were noticed and deliberately left alone:
 

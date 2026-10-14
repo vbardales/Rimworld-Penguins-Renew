@@ -5,7 +5,7 @@ repo: Rimworld-Penguins-Renew
 remote: https://github.com/vbardales/Rimworld-Penguins-Renew.git
 visibility: public
 detached: yes
-workflow_stage: makeSources
+workflow_stage: code[1.0.1]
 licence: silent
 licence_at: "2026-09-13: source mod 3477589277 declares only 1.5, no licence in four places (files, About.xml, linked repository, Steam description); not an authorisation"
 upstream_mod_remotes: N/A
@@ -18,10 +18,8 @@ workshop: 3811404080
 published: unverified
 tested_on:
 remaining:
-  - "2026-10-14: defect: Mod/About/ModIcon.png absent in the committed tree (file present, untracked)"
-  - "2026-10-14: defect: Preview not at the required composition (896 x 504 with title, summary, accent)"
+  - "2026-10-14: defect: ModIcon-source.png has excessive transparent padding and Render-Preview QA refuses it; needs the owner's explicit badge mode request (PUBLISHING.md)"
   - "2026-10-14: defect: About.xml description names 1.6 and 1.7 (rimworld-version WARN)"
-  - "2026-10-14: defect: ATTRIBUTION.md and README.md refer to Art/Preview-upstream.png, which no longer exists"
   - "2026-10-14: feature: written functional scenarios (TEST_SCENARIOS.md)"
   - "2026-10-14: unverified: Giddy-Up 2 optional integration class and guard"
   - "2026-10-14: unverified: no in-game results (FR/EN display, animals, eggs, pack rendering, sounds, riding, new game, existing save)"

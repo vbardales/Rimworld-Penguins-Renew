@@ -34,7 +34,7 @@ The current icon is a user-supplied generated penguin mascot, preserved in
 `Art/ModIcon-source.png` with its original prompt. The new snowy colony Preview was
 generated with OpenAI image_gen and composed with Segoe UI text. These presentation
 assets are separate from Peso penguin's unchanged gameplay textures. The original
-Preview is preserved at `Art/Preview-upstream.png`. The historical notes below describe
+Preview is preserved only in the git history (commit `e754e1f`). The historical notes below describe
 the earlier packaging and remain as provenance, not the current asset inventory.
 
 ## Where it came from

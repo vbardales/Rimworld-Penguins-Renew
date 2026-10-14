@@ -6,7 +6,7 @@ All notable changes to this mod are documented here.
 
 - Detached the local repository, preserving the existing GitHub history.
 - Added the required unofficial notices and final GitHub source link.
-- Replaced the upstream showcase with a generated colony illustration and added the penguin mascot icon. Original artwork and prompts are retained under Art/.
+- Replaced the upstream showcase with a generated colony illustration and added the penguin mascot icon. The icon source is kept under Art/; the original Preview survives only in the git history (commit `e754e1f`).
 - Added reproducible presentation tooling and functional validation scenarios.
 - Final in-game validation remains pending.
 
