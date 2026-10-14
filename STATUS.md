@@ -21,7 +21,7 @@ remaining:
   - "2026-10-14: defect: ModIcon-source.png has excessive transparent padding and Render-Preview QA refuses it; needs the owner's explicit badge mode request (PUBLISHING.md)"
   - "2026-10-14: defect: About.xml description names 1.6 and 1.7 (rimworld-version WARN)"
   - "2026-10-14: unverified: relecture du francais par Virginie (FRENCH_REVIEW.md generated at ae20da9)"
-  - "2026-10-14: feature: written functional scenarios (TEST_SCENARIOS.md)"
+  - "2026-10-14: feature: Pickle suites for the in-game scenarios of TEST_SCENARIOS.md, or a written reason they do not apply"
   - "2026-10-14: unverified: Giddy-Up 2 optional integration class and guard (no 1.6 Giddy-Up installed)"
   - "2026-10-14: unverified: Better Crossbreeding king x emperor pairing: owner decision"
   - "2026-10-14: unverified: no in-game results (FR/EN display, animals, eggs, pack rendering, sounds, riding, new game, existing save)"
@@ -31,6 +31,12 @@ updated: 2026-10-14
 ---
 
 # the Penguins mod 1.6 (unofficial) — status
+
+## Tests written — 2026-10-14
+
+- Functional scenarios: `TEST_SCENARIOS.md`, 23 in-game scenarios (7.a), figures read from the defs. None has run.
+- Automated and XML checks replayed at ae20da9 on the current files, all exit 0: `Check-XmlFields` (6 files), `Check-DefRefs` (with and without Core data), `Check-DefInjected` (48 keys, 0 errors), `Check-ConfigErrors`, `Check-TypeRefs` (7.b, 7.c). No C# build or unit suite applies to this source-free content mod; no artificial test was created (7.e).
+- Pickle suites (7.d): not written yet.
 
 ## Translation audit — 2026-10-14
 
