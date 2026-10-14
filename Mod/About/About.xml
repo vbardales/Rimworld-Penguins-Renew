@@ -10,6 +10,11 @@
   <incompatibleWith>
     <li>Pesopenguin.thePenguinsmod</li>
   </incompatibleWith>
+  <!-- Optional: A Dog Said... Animal Prosthetics 2 copies its category lists once, at its own last patch.
+       Patches/Compat_ADogSaidAnimalProsthetics2.xml has to run before it, so this mod loads first. -->
+  <loadBefore>
+    <li>SamBucher.ADogSaidAnimalProsthetics2</li>
+  </loadBefore>
   <description>UNOFFICIAL. This mod is published without the original author's explicit consent.
 If the original author contacts me to request its removal, I undertake to take it down promptly.
 

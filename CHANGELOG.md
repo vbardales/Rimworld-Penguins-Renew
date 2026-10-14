@@ -7,7 +7,8 @@ All notable changes to this mod are documented here.
 - Display name is now `the Penguins mod Renew (unofficial)`: the version number leaves the name, the unofficial suffix and opening notice are in `About.xml` and the README.
 - Standalone repository with its own history; build and render intermediates are ignored.
 - New generated colony Preview (896 x 504, title, summary, icon badge) and a 128 x 128 transparent ModIcon, both derived from the sources kept under `Art/`. The original Preview survives only in the git history (commit `e754e1f`).
-- Gameplay files are unchanged.
+- Optional patch for A Dog Said... Animal Prosthetics 2: both penguins can receive its animal surgeries (categories 1 and 2), with `loadBefore` in `About.xml`. No effect without that mod.
+- Gameplay files are otherwise unchanged.
 - Final in-game validation remains pending.
 
 ## [1.0.0] — 2026-09-06

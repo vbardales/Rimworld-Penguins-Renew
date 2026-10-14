@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  A Dog Said... Animal Prosthetics 2 (SamBucher.ADogSaidAnimalProsthetics2, Workshop 3238353862).
+
+  ADS 2 keeps three abstract RecipeDefs, ADS_Cat1 (medieval replacements), ADS_Cat2 (+ simple prosthetics) and
+  ADS_Cat3 (+ bionics), each with a hand-curated <recipeUsers> list, and copies those lists onto the real
+  surgery recipes in its own last patch (Patches/z_Category_Patches.xml). An animal absent from all three lists
+  offers only amputation and euthanasia, so without this file ADS 2 is a silent no-op for the penguins.
+
+  Both penguins go into Cat1 and Cat2 and not Cat3. The choice follows their vanilla counterparts in ADS 2's own
+  list (1.6/Defs/AnimalCategories/Animal_Categories.xml, read 2026-10-14): the mod gives the king penguin a duck's
+  voice and the emperor penguin a goose's, and Duck, Goose, Emu and Ostrich are all in Cat1 and Cat2 and in none
+  of Cat3. The lists are not nested, so the two additions are listed explicitly.
+
+  The guard is PatchOperationConditional on ADS_Cat1. Without ADS 2 the xpath selects nothing, no <nomatch> is
+  declared, and the operation reports success without logging anything. It is NOT MayRequire: MayRequire on an
+  <Operation> is read by nothing. Each branch of the predicate repeats @Name=, since [@Name="A" or "B"] is true
+  for every RecipeDef in the document.
+
+  About.xml declares <loadBefore>SamBucher.ADogSaidAnimalProsthetics2</loadBefore>: ADS 2 copies the lists once,
+  at its own patch, so this patch has to run first or it writes into lists nobody reads any more.
+-->
+<Patch>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/RecipeDef[@Name="ADS_Cat1"]</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/RecipeDef[
+				@Name="ADS_Cat2" or
+				@Name="ADS_Cat1"
+			]/recipeUsers</xpath>
+			<value>
+				<li>king_penguin</li>
+				<li>emperor_penguin</li>
+			</value>
+		</match>
+	</Operation>
+
+</Patch>

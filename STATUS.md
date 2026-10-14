@@ -5,7 +5,7 @@ repo: Rimworld-Penguins-Renew
 remote: https://github.com/vbardales/Rimworld-Penguins-Renew.git
 visibility: public
 detached: yes
-workflow_stage: declareDependencies[1.0.1]
+workflow_stage: settings[1.0.1]
 licence: silent
 licence_at: "2026-09-13: source mod 3477589277 declares only 1.5, no licence in four places (files, About.xml, linked repository, Steam description); not an authorisation"
 upstream_mod_remotes: N/A
@@ -21,7 +21,8 @@ remaining:
   - "2026-10-14: defect: ModIcon-source.png has excessive transparent padding and Render-Preview QA refuses it; needs the owner's explicit badge mode request (PUBLISHING.md)"
   - "2026-10-14: defect: About.xml description names 1.6 and 1.7 (rimworld-version WARN)"
   - "2026-10-14: feature: written functional scenarios (TEST_SCENARIOS.md)"
-  - "2026-10-14: unverified: Giddy-Up 2 optional integration class and guard"
+  - "2026-10-14: unverified: Giddy-Up 2 optional integration class and guard (no 1.6 Giddy-Up installed)"
+  - "2026-10-14: unverified: Better Crossbreeding king x emperor pairing: owner decision"
   - "2026-10-14: unverified: no in-game results (FR/EN display, animals, eggs, pack rendering, sounds, riding, new game, existing save)"
 protocols_read_sha: 583ce1259235b54ebacca29e1116689d1d24e589
 updated: 2026-10-14
@@ -29,6 +30,18 @@ updated: 2026-10-14
 ---
 
 # the Penguins mod 1.6 (unofficial) — status
+
+## Dependencies and integrations — 2026-10-14
+
+Verified in the sources (XML and patches), revision at the commit that introduces this section.
+
+- **Mandatory dependencies:** none. No DLC, no assembly, no LoadFolders. About.xml declares `incompatibleWith` `Pesopenguin.thePenguinsmod` and `loadBefore` `SamBucher.ADogSaidAnimalProsthetics2`.
+- **Giddy-Up 2 (optional):** `Patches/GiddyUpPatch.xml`, guarded by `PatchOperationConditional` on `ConceptDef GUC_Animal_Handling`. No Giddy-Up for 1.6 is installed here (only the Owlchemist French pack, 1.4/1.5), so the guard def and the class `GiddyUp.DrawingOffset` stay unverified in this checkout.
+- **A Dog Said... Animal Prosthetics 2 (optional, applied):** `Patches/Compat_ADogSaidAnimalProsthetics2.xml`, both penguins in ADS_Cat1 and ADS_Cat2 (analogues Duck, Goose, Emu, Ostrich, all in Cat1 and Cat2, none in Cat3). Read against 3238353862, folder 1.6.
+- **Nocturnal Animals (not applied):** the mod hand-lists defNames; its 1.6 bird patch names only Cassowary. Penguins stay diurnal like their analogues Duck, Goose and Ostrich, which it does not list.
+- **Dogs mate (not applied):** 1.6 groups cover Canidae, Felidae, Rodentia and Mammalia only, no bird group, so no group can hold a penguin.
+- **Better Crossbreeding (not applied):** a king x emperor pairing is a design decision about two animals of this mod, not stated by either description. Left to the owner.
+- DLC and `supportedVersions`: 1.6 only, no `LoadFolders.xml`.
 
 ## Continuation — 2026-09-13
 
