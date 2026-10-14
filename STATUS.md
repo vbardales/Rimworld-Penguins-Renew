@@ -5,7 +5,7 @@ repo: Rimworld-Penguins-Renew
 remote: https://github.com/vbardales/Rimworld-Penguins-Renew.git
 visibility: public
 detached: yes
-workflow_stage: setupRepo
+workflow_stage: makeSources
 licence: silent
 licence_at: "2026-09-13: source mod 3477589277 declares only 1.5, no licence in four places (files, About.xml, linked repository, Steam description); not an authorisation"
 upstream_mod_remotes: N/A
