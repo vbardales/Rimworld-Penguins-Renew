@@ -1,0 +1,221 @@
+# Historical audit, moved out of STATUS.md on 2026-10-15
+
+Dated evidence of the 2026-09-13 audit under the former vocabulary (dansMonoRepo, horsMonoRepo). The current state is in STATUS.md; this file proves nothing about the current Mod/.
+
+## Continuation — 2026-09-13
+
+The user authorized completion after the initial audit. This section and the current front
+matter supersede resolved findings in the historical audit below. Gameplay files and existing
+user assets were preserved. The old audit remains as dated evidence.
+
+- **horsMonoRepo** — 2026-09-13T13:52:44.540Z: Standalone .git initialized from origin/main, origin configured, upstream main retained. Parent commit 8ed0b99f149dbc689181c41daa021608551324c2 removes only Penguins; no Penguins paths remain tracked. English documents and required unofficial notices are present; LICENSE and ATTRIBUTION copies synchronized. Existing public GitHub commit ba894b969e784532e19f3ee6b2ece48121b36ce2 remains available.
+
+## Direct workflow audit — 2026-09-13
+
+**Previous stage: empty/unconfirmed; retained stage: `dansMonoRepo`.** The `showcase: preview`
+field recorded an existing image, not a completed workflow transition. The stage above uses
+the user's literal state name; the legacy codes in the historical sweep note below do not
+override it. No later cumulative state is established. Independent checks remain recorded.
+
+Scope: `C:\Users\nelim\Documents\rimworld\Penguins`, distributed folder `Mod/`.
+The installed `C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Penguins`
+is an NTFS junction to this exact `Mod/`. No autonomous checkout was identified: there is
+no local `.git`, and `git rev-parse --show-toplevel` returns
+`C:/Users/nelim/Documents/rimworld`. The sibling `_mods-sources/Penguins` is upstream
+content, not an autonomous checkout. No missing monorepo remote is treated as a defect.
+
+Revision at audit start: monorepo `75c3000e1833d325cc7626a402981e4aa881d47a`.
+Last commit touching this folder: `bc303d9ced55f8e2282615ac0632889f861f6e09`.
+Before this audit, `git status --short -- .` reported only ` M STATUS.md`: three local
+`unchecked` translation fields had been added. All mod content matched the audited revision.
+Those fields have now been updated from direct checks; no content, image, source, Git index,
+remote, publication or historical result was changed. Only this status file was edited.
+The prior session/sweep note is preserved below.
+
+Read `../PUBLISHING.md`, `../STYLE_RIMWORLD.md`, `../MOD_SETTINGS.md` and
+`../TRANSLATIONS.md`. The user's audit instructions take precedence, in particular:
+settings without useful controls can pass by source inspection; game checks belong to
+`done -> tested`; a historical image-generation report or camera comparison is not required.
+RimWorld was never launched.
+
+### Ordered transition results
+
+| Transition | Independent result in the audited files |
+| --- | --- |
+| dansMonoRepo -> horsMonoRepo | **Blocked: observed defect.** Local autonomous Git checkout and its configured GitHub remote are absent. GitHub repository and pushed commit are verified separately below. English README, ATTRIBUTION, LICENSE and CHANGELOG exist; distributed LICENSE and ATTRIBUTION are byte-identical to the root copies. Public/silent packaging is missing the required unofficial name and opening notice. |
+| horsMonoRepo -> ModIcon generated | **Blocked: observed defect.** `Mod/About/ModIcon.png` is absent, as the existing documentation also acknowledges. Build is **not applicable, justified**: no C# sources, project or distributed assembly; this is XML content plus textures. Static checks pass, but optional integration verification remains pending. |
+| ModIcon generated -> Preview generated | **Blocked: observed defect.** PNG decodes and is under 1 MB (285,166 bytes), but is 750 x 384 rather than 896 x 504. Direct inspection shows the upstream animal showcase with broad white side bands. No camera defect was observed; no generation history or comparison screenshot is demanded. |
+| Preview generated -> preOptions | **Blocked: observed defects.** No composed title, summary, secondary ink or accent rule/badge exists; therefore their separation and title hierarchy are not implemented. English description exists, but unofficial marking and the final BBCode source link are missing. |
+| preOptions -> options | **Not applicable, justified**, independently passed; see Settings audit. |
+| options -> l10n | **Validated independently** for source/resource readiness; see Translation audit. No in-game translation claim. |
+| l10n -> preTest | **Partially verified.** Core-only references resolve and no mandatory third-party dependency was found. The Giddy-Up branch is guarded, but its installed target class/guard and applicable ordering have not been independently verified. |
+| preTest -> done | **Not established.** Existing shared automated XML checks were executed successfully. Written functional scenarios are absent. Optional patch behavior is not covered by these successful checks. No separate C# build/unit suite is applicable to this source-free content mod. |
+| done -> tested | **Non verified.** No attributable scenario execution, version-matched game log or FR/EN UI evidence was found in the project. The README/About phrase mentioning in-game testing is not evidence of successful scenarios. |
+
+### Repository, rights classification and description
+
+Authenticated read-only commands succeeded after the sandbox initially denied access to
+GitHub CLI configuration:
+
+```powershell
+gh repo view vbardales/Rimworld-Penguins-Renew --json nameWithOwner,visibility,url,defaultBranchRef
+gh api repos/vbardales/Rimworld-Penguins-Renew/commits/main --jq '{sha: .sha, date: .commit.committer.date, message: .commit.message}'
+```
+
+Observed repository: public, default branch `main`,
+`https://github.com/vbardales/Rimworld-Penguins-Renew`.
+Pushed commit: `ba894b969e784532e19f3ee6b2ece48121b36ce2`, 2026-09-11T15:23:21Z,
+initial import. This establishes a real remote repository and commit, not a completed local
+detachment or equality between the remote tree and the currently distributed files.
+`nelim.penguins`, folder `Penguins`, repository `Rimworld-Penguins-Renew` and the About URL
+identify the same port; literal identity is not required. No `packageName` field is present
+or required by the inspected metadata.
+
+`licence: silent` is retained as the documented workflow classification. The installed upstream
+`3477589277/About/About.xml` declares only 1.5. The source listing fetched through the web tool
+also declares 1.5 and shows no permission/prohibition in its description or its two displayed
+comments, but the tool labels that response as crawled three months ago: it is not a fresh,
+exhaustive permission search. See the [upstream listing](https://steamcommunity.com/sharedfiles/filedetails/?id=3477589277).
+The existing attribution records the four-place licence search and removal commitment.
+No licence has been invented for the original assets: LICENSE explicitly limits MIT to the
+port's contributions and excludes the original mod and Preview. Removed VAE audio is absent
+from the delivered tree. Classification is not author consent.
+
+The public/silent choice requires the exact ` (unofficial)` suffix on About's name, README's
+title and this file's `mod` field, and the prescribed opening disclaimer in About/README.
+They are absent. The actual current name is retained above to report the artifact accurately;
+changing only the status name would hide the metadata discrepancy. The description also uses
+a raw GitHub URL followed by further paragraphs instead of ending with
+`[url=https://github.com/vbardales/Rimworld-Penguins-Renew]Source code on GitHub[/url]`.
+
+Root/distributed SHA-256 pairs are identical:
+
+- LICENSE: `55C384B3466A8D977C852512E18B7F392D1F5E95CB46702F27A4402A24BAC55E`.
+- ATTRIBUTION.md: `C28D8822148DC8A30203B218491931ADCD726C37A579D6764597D90F3B56AA89`.
+- Inspected Preview: `689C62DBD0B1E396723BE7D0BE9762D083FFDD5C78C30A336B618B59112EFCC6`.
+
+### Settings audit
+
+`settings_audit: not_applicable`, 2026-09-13, revision/scope above.
+Inventory: two animal ThingDefs and PawnKindDefs, four eggs, one abstract egg parent,
+fixed biological/balance values and one conditional Giddy-Up drawing-offset patch.
+Egg intervals/temperature, wildness, training and biome weights are content defaults,
+not a documented player configuration interface. No user-configurable behavior or concrete
+need for new controls was identified; do not invent controls for every balance constant.
+The Giddy-Up patch supplies fixed rendering data and exposes no settings of its own.
+
+Full tree and XML inspection, plus a search for `ModSettings`, `SettingsCategory`,
+`DoSettingsWindowContents`, `MainButtonDef`, `MainTabWindow`, `settings` and `config`,
+found no settings class, inherited settings integration, empty page, shortcut or manual-XML
+configuration workflow. No assembly exists to register one dynamically. There is no settings
+state, persistence, bounds, migration or application timing to test. Primary settings access,
+RIMMSQOL reveal/hide and shared configuration checks are therefore not applicable.
+No customization integration was tested interactively.
+
+### Translation audit
+
+`localization`, `translation_en`, `translation_fr`: **complete for resource readiness**,
+2026-09-13, current delivered files. Inventoried all three Def files, the conditional patch,
+all three French DefInjected files and About metadata. No C# or additional LoadFolders exists.
+
+English is supplied natively by the animal/egg labels and descriptions, tools `claws`/`head`,
+PawnKind labels and vanilla-generated life-stage/plural fallbacks. A redundant English folder
+is unnecessary. French has 48 nonempty entries: 16 ThingDef entries and 32 PawnKind entries,
+including indexed life stages and male/plural forms. The explicit source text inventory is
+covered; the patch adds numeric vectors only. No owned Keyed strings or format parameters,
+untranslated placeholders, duplicate typed keys or hardcoded UI were found. French uses
+`manchot royal`/`manchot empereur`; semantic coverage was reviewed directly.
+Metadata/descriptions for Workshop and repository documentation are outside the in-game gate.
+
+`Check-DefInjected.ps1` resolved all 48 paths with 0 errors (11,592 defs indexed; 30 patch
+operations reported by the checker across its reference inputs, not 30 Penguins patches).
+This verifies resource paths, not the actual FR/EN display or Giddy-Up runtime branch.
+
+### Executed automated and XML checks
+
+Run from this mod folder, using installed RimWorld **1.6.4871 rev590**, without starting it:
+
+```powershell
+pwsh -NoProfile -File ../scripts/Check-XmlFields.ps1 -ModPath Mod
+pwsh -NoProfile -File ../scripts/Check-DefRefs.ps1 -ModPath Mod -Brief
+pwsh -NoProfile -File ../scripts/Check-DefRefs.ps1 -ModPath Mod -GameData 'C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Data\Core' -Brief
+pwsh -NoProfile -File ../scripts/Check-DefInjected.ps1 -TransMod Mod
+pwsh -NoProfile -File ../scripts/Check-ConfigErrors.ps1 -ModPath Mod
+pwsh -NoProfile -File ../scripts/Check-TypeRefs.ps1 -ModPath 'C:\Users\nelim\Documents\rimworld\Penguins\Mod'
+```
+
+All six processes exited **0**. Expected/observed results:
+
+- Field checker: 5 files, no unknown field.
+- Reference checker: no missing/incorrectly typed reference or unresolved ParentName,
+  both with installed DLC reference folders and with **Core alone**. Its count of six names
+  collapses same-name ThingDef/PawnKindDef; a separate typed inventory counted eight distinct
+  concrete defs and one abstract parent, with no duplicate `(type, defName)`.
+- Translation checker: 48 paths, 0 errors.
+- Config checker: 9/9 defs, 26 rules, no config error. It excludes patches, cross-def rules
+  and computed-property checks, as its output explicitly states.
+- Type-reference guard checker: 5 XML files, no unguarded third-party type reference.
+- Additional direct `System.Xml.XmlDocument.Load` checks: all **8 delivered XML files** parse;
+  French entries are nonempty and have no duplicate `(Def type, key)`.
+
+Reference Assembly-CSharp.dll SHA-256:
+`5CF1B5BE399D5B1C9C56CA72C9D35B4ECF307FEACF5859D04AC5A1AA5926356A`.
+These shared scripts already contain automated checks; no artificial test suite was created.
+Their results apply to the current files, whose content was not changed by the audit.
+They do not prove full game loading, gameplay or rider rendering.
+
+### Dependencies and remaining mandatory verification
+
+`dependencies: none` means no mandatory third-party mod. References resolve against Core
+alone; About declares 1.6 and incompatibility with `Pesopenguin.thePenguinsmod`.
+No LoadFolders, DLC requirement or unconditional third-party class was found.
+Giddy-Up is optional: a `PatchOperationConditional` checks `GUC_Animal_Handling`, then adds
+`GiddyUp.DrawingOffset` to `emperor_penguin`; absent that guard def, the extension is not applied.
+About has neither `modDependencies` nor `loadAfter`. No mandatory dependency is inferred merely
+from this optional patch. The installed current Giddy-Up implementation was not identified by
+the bounded local lookup, so class/guard compatibility and any necessary order/version
+constraints remain **non verified**, not a diagnosed broken integration or a demand to add
+an arbitrary dependency.
+
+For `done`, write real functional scenarios and verify any still-applicable automated patch
+cases; preserve the successful static results above. For `tested`, execute those scenarios
+in game, inspect logs and English/French text, cover new-game spawning and an existing save,
+animal training/eggs/sounds, emperor pack facings and optional Giddy-Up present/absent behavior.
+No saved-game migration or broad compatibility claim is certified by this audit.
+
+### Strict next transition and optional notes
+
+To reach **horsMonoRepo**, establish the standalone local Git checkout and its GitHub remote,
+preserving ongoing work; keep the already verified public repository/pushed-commit evidence;
+bring public/silent marking in About/README/STATUS into agreement with the documented decision.
+No image generation or gameplay test is required for that first transition. Those later
+requirements remain listed independently above.
+
+Optional editorial recommendation: improve the emperor's English sentence
+`How it end up in rimworld. but nobody knows.` This is awkward grammar, not a missing
+translation or a gate blocker. The corpse's unused duplicate texture and inherited balance
+oddities remain historical design notes, not newly diagnosed regressions.
+
+## Historical sweep note — preserved
+
+Read by a sweep across every mod, rather than by asking each thread in turn. It lives at the
+root, never inside `Mod/`, so Steam never receives it.
+
+The fields above were read off the disk on 2026-09-12. Four cannot be, and wait for whoever
+holds this mod:
+
+- **`stage`** — one of `port`, `showcase`, `preTest`, `done`, `tested`, `published`. Filled in
+  from the session group where one exists; confirm it.
+- **`tested_on`** — the date of the last run in game. Empty means never.
+- **`dependencies`** — `declared` when every mod this one needs is named in the About's
+  `modDependencies`, `to check` when a non-vanilla `loadAfter` suggests a dependency that is not
+  declared, `none` when the mod needs nothing. An undeclared dependency is not cosmetic: on
+  2026-09-11 Reequilibrage animaux took 47 vanilla animals down with it, Muffalo included, because
+  the class it injects belongs to a mod that was not declared and not loaded.
+- **`remaining`** — what is left, in three kinds: `feature` for something missing from a first
+  release, `defect` for a known fault left unfixed, `unverified` for what could not be checked.
+  The line already there is true of nearly the whole repository; replace it once it stops being.
+
+`licence` vocabulary: `open` an explicit licence, `silent` no licence and a dead source,
+`alive` no licence but a living source, `forbidden` a written refusal, `original` owing nothing
+to anyone — not a name, not an idea traceable to one mod, not a value derived from its assets.
