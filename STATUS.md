@@ -25,7 +25,7 @@ remaining:
   - "2026-10-14: unverified: no in-game results (FR/EN display, animals, eggs, pack rendering, sounds, riding, new game, existing save)"
   - "2026-10-16: unverified: initial Pickle pass at 5f90ff4 green (see docs/runs/history.md); eggUnfertilizedDef fix awaits a small ticket reading Player.log (8.i); gallery @review captures, the 23 scenarios of TEST_SCENARIOS.md and the code review (8.m) not done"
   - "2026-10-16: feature: gallery plan in PUBLICATION.md and shoot script Tests/Pickle/Mod/Pickle/Features/gallery-penguin-shore.feature written, not run (shootGallery). Unverified in game: hairstyle Princess, Apparel_Parka dye, ITab_Pawn_Health, cell (90, 140). No step for kneel or crouch (Nelim stands)"
-protocols_read_sha: 25f17b74015200d70801ed63274b0423e375550d
+protocols_read_sha: 7db1e37ab197dac63501eb0554896a23a4ac9fed
 updated: 2026-10-16
 ---
 ---
