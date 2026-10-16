@@ -18,13 +18,12 @@ workshop: 3811404080
 published: unverified
 tested_on:
 remaining:
-  - "2026-10-14: defect: About.xml description names 1.6 and 1.7 (rimworld-version WARN)"
   - "2026-10-15: unverified: Giddy-Up 2 Pickle pass not written, no 1.6 Giddy-Up installed"
   - "2026-10-15: unverified: every Pickle scenario and the 23 scenarios of TEST_SCENARIOS.md are unrun"
   - "2026-10-14: unverified: Giddy-Up 2 optional integration class and guard (no 1.6 Giddy-Up installed)"
   - "2026-10-14: unverified: Better Crossbreeding king x emperor pairing: owner decision"
   - "2026-10-14: unverified: no in-game results (FR/EN display, animals, eggs, pack rendering, sounds, riding, new game, existing save)"
-protocols_read_sha: 7bafac79376f69b0ecc5d31de811aef4f53a9987
+protocols_read_sha: 005d9b2720a85d62a3a31b02c265f3133621ee72
 updated: 2026-10-14
 ---
 ---

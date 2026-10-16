@@ -22,7 +22,7 @@ Two penguins for the cold maps. A king penguin, small and sociable, that nuzzles
 
 Both spawn wild on sea ice, ice sheet, tundra, boreal forest and cold bog. No DLC, no dependencies, no assembly, no research. Eight defs, ten textures and one optional patch.
 
-I am not the author of this mod. The animals, their artwork and their balance are Peso penguin's - all I did was bring it forward to 1.6, repair what the port turned up, and write the French. Credit goes to them; mistakes in the port are mine.
+I am not the author of this mod. The animals, their artwork and their balance are Peso penguin's - all I did was bring it forward to the latest RimWorld version, repair what the port turned up, and write the French. Credit goes to them; mistakes in the port are mine.
 
 Original mod: https://steamcommunity.com/sharedfiles/filedetails/?id=3477589277 - posted May 2025, declares 1.5 and nothing further, never updated.
 
@@ -36,17 +36,17 @@ WHAT'S IN IT
 
 WHAT CHANGED
 
-Wildness stopped being a property of the animal and became a stat. Both penguins declared it the old way, asking for 0.15; in 1.6 that element matches no field, so the game logs one line and loads the animal without it. The Wildness stat defaults to -1 and is clamped to a floor of 0, so both penguins came out at wildness 0 - as tame as the tamest thing in the game, taming on the first try and never reverting to the wild. They now declare the stat, and are back to the 0.15 they asked for.
+Wildness stopped being a property of the animal and became a stat. Both penguins declared it the old way, asking for 0.15; in the latest RimWorld version that element matches no field, so the game logs one line and loads the animal without it. The Wildness stat defaults to -1 and is clamped to a floor of 0, so both penguins came out at wildness 0 - as tame as the tamest thing in the game, taming on the first try and never reverting to the wild. They now declare the stat, and are back to the 0.15 they asked for.
 
 The mod declared its own EggBase, EggUnfertBase and EggFertBase - the names the game already uses for the abstract parents of every egg in it. That is legal, and it is also contagious: RimWorld resolves an abstract parent to the copy from the latest-loading mod at or below the def asking for it, so every egg in every mod loaded after this one was inheriting these copies instead of the game's. The copies were not faithful. The fertilized base is safe from -30C to 10C where the game's is 0C to 50C, so any other mod's fertilized eggs would quietly have been ruined by room temperature. Two of the three copies changed nothing and are gone; the cold temperature range is kept, under a name of this mod's own.
 
-The Giddy-Up patch had never worked, in any version. It asked for a ThingDef called "King_penguin" while the def is king_penguin - defNames are case-sensitive - guarded on a mod called "Giddy-up! Core" that no longer exists, and added a mod extension whose class 1.6 no longer defines. It was also on the wrong penguin: Giddy-Up mounts animals over body size 1.2, which is the emperor at 1.35 and never the king at 0.35. It is rewritten for Giddy-Up 2, on the emperor penguin.
+The Giddy-Up patch had never worked, in any version. It asked for a ThingDef called "King_penguin" while the def is king_penguin - defNames are case-sensitive - guarded on a mod called "Giddy-up! Core" that no longer exists, and added a mod extension whose class the latest RimWorld version no longer defines. It was also on the wrong penguin: Giddy-Up mounts animals over body size 1.2, which is the emperor at 1.35 and never the king at 0.35. It is rewritten for Giddy-Up 2, on the emperor penguin.
 
 The emperor penguin's pack was shipped as emperor_penguinPack.png, with no facing suffix. RimWorld reads a file with no suffix only when all four facings are missing, so that one never loaded, and the pack seen from the side was drawn using the view of its back. It is the east view; it is now named as one.
 
 Two labels were typed twice: the king penguin was called "king penguin penguin", and its eggs were labelled with the raw defName, underscore and all.
 
-The four penguin sounds are gone, and that one was not a porting decision. They were Vanilla Animals Expanded's: the sound defs carried its own AEXP_ names, and the four audio files were byte-for-byte identical to its. Vanilla Animals Expanded is still maintained, declares 1.6, and is licensed CC BY-NC-ND - no derivatives - so none of it is republished here, and nothing in this mod grants any right over it. The penguins are not left mute: they use RimWorld's own waterfowl instead, a duck for the king penguin and a goose for the emperor, both from the base game and neither a new dependency. If you knew the original mod, this is the one thing that sounds different.
+The four penguin sounds are gone, and that one was not a porting decision. They were Vanilla Animals Expanded's: the sound defs carried its own AEXP_ names, and the four audio files were byte-for-byte identical to its. Vanilla Animals Expanded is still maintained, declares the latest RimWorld version, and is licensed CC BY-NC-ND - no derivatives - so none of it is republished here, and nothing in this mod grants any right over it. The penguins are not left mute: they use RimWorld's own waterfowl instead, a duck for the king penguin and a goose for the emperor, both from the base game and neither a new dependency. If you knew the original mod, this is the one thing that sounds different.
 
 Otherwise nothing moved. Every stat, tool, life stage, draw size, biome weight and trade tag is as Peso penguin left them, and so is every texture, byte for byte.
 
