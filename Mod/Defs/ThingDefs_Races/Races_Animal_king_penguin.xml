@@ -53,6 +53,7 @@
     <comps>
       <li Class="CompProperties_EggLayer">
         <eggFertilizedDef>king_penguinFertilized</eggFertilizedDef>
+        <eggUnfertilizedDef>king_penguinUnfertilized</eggUnfertilizedDef>
         <eggFertilizationCountMax>1</eggFertilizationCountMax>
         <eggLayIntervalDays>12</eggLayIntervalDays>
         <eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>

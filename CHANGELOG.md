@@ -17,6 +17,11 @@ The port's own presentation and packaging, all in this first release:
 
 ### Fixed
 
+- `emperor_penguin`, `king_penguin`: `<eggUnfertilizedDef>` added to `CompProperties_EggLayer`
+  (`emperor_penguinUnfertilized`, `king_penguinUnfertilized`, both already defined). The comp
+  declared only the fertilized egg, and the 1.6 loader logged `Config error in king_penguin:
+  eggUnfertilizedDef is null` once per race at every start (seen in the Pickle logs of 2026-10-16).
+
 - `emperor_penguin`, `king_penguin`: `<wildness>0.15</wildness>` under `<race>` replaced by
   `<Wildness>0.15</Wildness>` under `<statBases>`. Wildness stopped being a field of
   `RaceProperties` and became a `StatDef`; the old element matches no field, so the loader logged
