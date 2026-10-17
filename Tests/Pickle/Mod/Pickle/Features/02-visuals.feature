@@ -14,7 +14,7 @@ Feature: The two penguins are drawn and read correctly in game
     And I close all dialogs
     When Nelim's Pickle Tools: an adult animal of kind "<kind>" named "Adult <kind>" is spawned at (<x>, 150)
     And Nelim's Pickle Tools: I select the thing of def "<kind>" at (<x>, 150)
-    And Nelim's Pickle Tools: the camera is centered on "Adult <kind>" at root size 6
+    And Nelim's Pickle Tools: the camera is centered on "Adult <kind>" at root size 11
     Then I take a screenshot "penguins <kind> adult"
     And no errors were logged
 
@@ -29,7 +29,7 @@ Feature: The two penguins are drawn and read correctly in game
     Given the save "test-colony" is loaded
     And I close all dialogs
     And Nelim's Pickle Tools: an animal of kind "<kind>" named "Stage <kind>" is spawned at (<x>, 146) at the life stage "<stage>"
-    When Nelim's Pickle Tools: the camera is centered on "Stage <kind>" at root size 6
+    When Nelim's Pickle Tools: the camera is centered on "Stage <kind>" at root size 11
     Then I take a screenshot "penguins <kind> <stage>"
     And no errors were logged
 

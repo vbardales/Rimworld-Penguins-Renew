@@ -42,14 +42,14 @@ Played by Pickle tickets (a session never launches the game). Revisions: `5f90ff
 | --- | --- | --- |
 | 1 | played, green | `01-defs`: both races, both kinds, four eggs exist, no error |
 | 2, 3 | not applicable | stats are values written in XML, proved by `Check-XmlFields` and `Check-ConfigErrors`; a scenario would repeat them (`Tests/Pickle/README.md`) |
-| 4 | unverified | the effective Wildness stat in game has no step |
+| 4 | written, ticket 20261017-193110-903-2a85 pending | `06-wildness-and-pack`: effective Wildness of both adults is 0.15 (taming attempts not played) |
 | 5 | played, green | `01-defs`: the five cold biomes list both penguins |
 | 6, 7, 8, 9, 10 | not applicable | laying, hatching, egg temperature, nuzzling and training are vanilla comps that the mod only gives numbers to; the numbers are offline-checked |
-| 11 | unverified | no step makes the emperor carry a pack and turn; manual |
+| 11 | partly written, same ticket | the three pack textures are shipped by the mod; the pack drawn on four facings stays manual (no step fills an animal's inventory) |
 | 12 | not applicable | the mod ships no audio: it names vanilla duck and goose sound defs, resolved by `Check-DefRefs` |
 | 13, 14 | played, green | `02-visuals` language scenarios in English and French |
 | 15 | not applicable | loading a save is the game's own behaviour (AUDIT.md, "On ne teste pas le jeu"); the save and reload of `03-persistence` is green |
-| 16 | unverified | README wording not re-read here |
+| 16 | read, green | README.md, section "What the mod does": "Content mod: removing it mid-save destroys any penguin already in the colony." The Steam description is written at `writeDocs` |
 | 17 | unverified | no Giddy-Up 2 for 1.6 installed |
 | 18, 20 | played, green | passes without optional mods: no log line from either patch |
 | 19 | played, green | pass 2: both penguins offered categories 1 and 2, not 3 |

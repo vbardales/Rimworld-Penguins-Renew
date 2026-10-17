@@ -36,9 +36,13 @@ Pass 3 is replayed when the original changes, not at every release.
   with a guessed id. The scenarios are written, in the Pass 4 of this table, once the mod is installed.
 - **Nocturnal Animals, Dogs mate, Better Crossbreeding**: no patch exists for them (reasons in `STATUS.md`), so
   there is nothing to test.
+- **Scenarios 4 and 11 (written 2026-10-17, `06-wildness-and-pack.feature`)**: 4 reads the effective Wildness stat of a
+  spawned animal with Pickle's pawn stat step; 11 proves only that the three pack textures are shipped by the mod
+  (TextureOwner). The pack drawn on the animal stays manual: no step puts items in an animal's inventory.
+  Scenario 16 (README warning) has no Pickle step: a repository file is not game state; read by the session.
 - **Eggs laid and hatched, nuzzling, training, the pack seen from four sides, sounds**: no shared step exists to
-  observe them, and each would need a local C# step. They stay manual scenarios of `TEST_SCENARIOS.md` (11, 12, 6, 7,
-  9, 10) until a second mod needs the same step, at which point it moves to PickleTools. Unverified in `STATUS.md`.
+  observe them, and each would need a local C# step. They stay manual scenarios of `TEST_SCENARIOS.md` (the pack
+  drawing of 11, 12, 6, 7, 9, 10) until a second mod needs the same step, at which point it moves to PickleTools. Unverified in `STATUS.md`.
 - **Gallery captures**: written at `shootGallery`, in the Sanctuary, never here.
 
 ## Launching
