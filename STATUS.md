@@ -16,18 +16,15 @@ translation_fr: complete
 dependencies: none
 workshop: 3811404080
 published: unverified
-tested_on:
+tested_on: "2026-10-16 Pickle 1.6: initial pass at 5f90ff4 (EN, FR, ADS 2, original) green; 01-defs EN at d7d4ef6 green after the eggUnfertilizedDef fix"
 remaining:
   - "2026-10-15: unverified: Giddy-Up 2 Pickle pass not written, no 1.6 Giddy-Up installed"
-  - "2026-10-15: unverified: every Pickle scenario and the 23 scenarios of TEST_SCENARIOS.md are unrun"
   - "2026-10-14: unverified: Giddy-Up 2 optional integration class and guard (no 1.6 Giddy-Up installed)"
-  - "2026-10-14: unverified: Better Crossbreeding king x emperor pairing: owner decision"
-  - "2026-10-14: unverified: no in-game results (FR/EN display, animals, eggs, pack rendering, sounds, riding, new game, existing save)"
   - "2026-10-17: unverified: the 23 scenarios of TEST_SCENARIOS.md not all played in game (eggs laid and hatched, nuzzling, training, pack facings, sounds, riding, new game, existing save); gallery @review captures belong to shootGallery"
   - "2026-10-16: feature: gallery plan in PUBLICATION.md and shoot script Tests/Pickle/Mod/Pickle/Features/gallery-penguin-shore.feature written, not run (shootGallery). Unverified in game: hairstyle Princess, Apparel_Parka dye, ITab_Pawn_Health, cell (90, 140). No step for kneel or crouch (Nelim stands)"
 code_review_sha: 2f517791c440fa451d4b7985fa8d5237f1062909
 protocols_read_sha: 7693bc9c57044ef5e155ba5216069f8320290a55
-updated: 2026-10-16
+updated: 2026-10-17
 ---
 ---
 
@@ -57,7 +54,7 @@ Verified in sources (XML and patches), revision at commit introducing this secti
 - **A Dog Said... Animal Prosthetics 2 (optional, applied):** `Patches/Compat_ADogSaidAnimalProsthetics2.xml`, both penguins in ADS_Cat1 and ADS_Cat2 (analogues Duck, Goose, Emu, Ostrich, all in Cat1 and Cat2, none in Cat3). Read against 3238353862, folder 1.6.
 - **Nocturnal Animals (not applied):** mod hand-lists defNames; its 1.6 bird patch names only Cassowary. Penguins stay diurnal like analogues Duck, Goose, Ostrich, which it does not list.
 - **Dogs mate (not applied):** 1.6 groups cover Canidae, Felidae, Rodentia, Mammalia only, no bird group, so no group can hold penguin.
-- **Better Crossbreeding (not applied):** king x emperor pairing is design decision about two animals of this mod, not stated by either description. Left to owner.
+- **Better Crossbreeding (not applied):** king x emperor pairing declined by owner (Virginie, 2026-10-17): no hybrid race, no patch.
 - DLC and `supportedVersions`: 1.6 only, no `LoadFolders.xml`.
 
 ## Historical audit
@@ -66,4 +63,4 @@ Verified in sources (XML and patches), revision at commit introducing this secti
 
 ## Session state — 2026-10-16
 
-Audit replayed to `playTests[1.0.0]`, offline checks green at 5f90ff4 (About.xml description no longer names RimWorld version). Four initial Pickle tickets filed (see `remaining`); working tree of `Mod/` and suites stays on 5f90ff4 until `RUN_DONE`. Session code `Pe`, registered with Ticket Manager. Gallery plan and shoot script written for `shootGallery`, nothing captured.
+Audit replayed to `playTests[1.0.0]`. Initial Pickle pass green at 5f90ff4, `eggUnfertilizedDef` defect fixed and verified at d7d4ef6, code review done (`code_review_sha`). Open: the 23 in-game scenarios of `TEST_SCENARIOS.md` and Giddy-Up 2. Session code `Pe`. Gallery plan and shoot script written for `shootGallery`, nothing captured.
