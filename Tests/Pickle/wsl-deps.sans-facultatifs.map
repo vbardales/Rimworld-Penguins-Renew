@@ -6,4 +6,5 @@ nelim.pickletools.deffields path:PickleTools/DefFieldSteps/Mod
 nelim.pickletools.screenshotstudio path:PickleTools/ScreenshotStudio/Mod
 nelim.pickletools.camerazoom path:PickleTools/CameraZoom/Mod
 nelim.pickletools.textureowner path:PickleTools/TextureOwner/Mod
+nelim.pickletools.colonistrace path:PickleTools/ColonistRace/Mod
 nelim.penguins path:PenguinsRenew/Mod

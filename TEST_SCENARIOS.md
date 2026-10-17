@@ -45,7 +45,7 @@ Played by Pickle tickets (a session never launches the game). Revisions: `5f90ff
 | 4 | written, ticket 20261017-193110-903-2a85 pending | `06-wildness-and-pack`: effective Wildness of both adults is 0.15 (taming attempts not played) |
 | 5 | played, green | `01-defs`: the five cold biomes list both penguins |
 | 6, 7, 8, 9, 10 | not applicable | laying, hatching, egg temperature, nuzzling and training are vanilla comps that the mod only gives numbers to; the numbers are offline-checked |
-| 11 | partly written, same ticket | the three pack textures are shipped by the mod; the pack drawn on four facings stays manual (no step fills an animal's inventory) |
+| 11 | written, same ticket (staged when it runs) | the three pack textures are shipped by the mod; `@review` captures of the emperor with 20 Silver in its pack on four facings (PickleTools step 124c3e2, compiled, not played); a person reads the captures, and the drawn texture path has no assertion yet |
 | 12 | not applicable | the mod ships no audio: it names vanilla duck and goose sound defs, resolved by `Check-DefRefs` |
 | 13, 14 | played, green | `02-visuals` language scenarios in English and French |
 | 15 | not applicable | loading a save is the game's own behaviour (AUDIT.md, "On ne teste pas le jeu"); the save and reload of `03-persistence` is green |
