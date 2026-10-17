@@ -19,8 +19,9 @@ published: unverified
 tested_on: "2026-10-16 Pickle 1.6: initial pass at 5f90ff4 (EN, FR, ADS 2, original) green; 01-defs EN at d7d4ef6 green after the eggUnfertilizedDef fix"
 remaining:
   - "2026-10-15: unverified: Giddy-Up 2 Pickle pass not written, no 1.6 Giddy-Up installed"
+  - "2026-10-17: unverified: scenarios 4 (effective Wildness stat), 11 (pack textures), 16 (README warning) of TEST_SCENARIOS.md have no step; the other 20 are played green or not applicable with a reason (section Playtest verdicts). Needs a decision before leaving playTests (8.k): write the steps or declare them not applicable"
   - "2026-10-14: unverified: Giddy-Up 2 optional integration class and guard (no 1.6 Giddy-Up installed)"
-  - "2026-10-17: unverified: the 23 scenarios of TEST_SCENARIOS.md not all played in game (eggs laid and hatched, nuzzling, training, pack facings, sounds, riding, new game, existing save); gallery @review captures belong to shootGallery"
+  - "2026-10-17: unverified: ticket 20261017-141041-271-aaf1 (02-visuals EN, camera zoomed on the animal, revision d9e8c3b) pending: open the six captures in Tests/Pickle/Evidence/2026-10-17-visuals-en/screenshots (8.d) when TM sends RUN_DONE"
   - "2026-10-16: feature: gallery plan in PUBLICATION.md and shoot script Tests/Pickle/Mod/Pickle/Features/gallery-penguin-shore.feature written, not run (shootGallery). Unverified in game: hairstyle Princess, Apparel_Parka dye, ITab_Pawn_Health, cell (90, 140). No step for kneel or crouch (Nelim stands)"
 code_review_sha: 2f517791c440fa451d4b7985fa8d5237f1062909
 protocols_read_sha: 7693bc9c57044ef5e155ba5216069f8320290a55
