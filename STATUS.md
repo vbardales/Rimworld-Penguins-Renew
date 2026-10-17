@@ -23,8 +23,9 @@ remaining:
   - "2026-10-14: unverified: Giddy-Up 2 optional integration class and guard (no 1.6 Giddy-Up installed)"
   - "2026-10-14: unverified: Better Crossbreeding king x emperor pairing: owner decision"
   - "2026-10-14: unverified: no in-game results (FR/EN display, animals, eggs, pack rendering, sounds, riding, new game, existing save)"
-  - "2026-10-16: unverified: initial Pickle pass at 5f90ff4 green (see docs/runs/history.md); eggUnfertilizedDef fix awaits a small ticket reading Player.log (8.i); gallery @review captures, the 23 scenarios of TEST_SCENARIOS.md and the code review (8.m) not done"
+  - "2026-10-17: unverified: the 23 scenarios of TEST_SCENARIOS.md not all played in game (eggs laid and hatched, nuzzling, training, pack facings, sounds, riding, new game, existing save); gallery @review captures belong to shootGallery"
   - "2026-10-16: feature: gallery plan in PUBLICATION.md and shoot script Tests/Pickle/Mod/Pickle/Features/gallery-penguin-shore.feature written, not run (shootGallery). Unverified in game: hairstyle Princess, Apparel_Parka dye, ITab_Pawn_Health, cell (90, 140). No step for kneel or crouch (Nelim stands)"
+code_review_sha: 2f517791c440fa451d4b7985fa8d5237f1062909
 protocols_read_sha: 7db1e37ab197dac63501eb0554896a23a4ac9fed
 updated: 2026-10-16
 ---
