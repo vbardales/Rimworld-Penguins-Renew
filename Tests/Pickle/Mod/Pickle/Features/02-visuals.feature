@@ -5,16 +5,16 @@
 # Textures, life stages and the pack are read by a person from the attached captures: a green scenario
 # says the spawn and the capture happened, not that the picture is right (@review).
 
-@requires:nelim.pickletools.deffields @requires:nelim.pickletools.inspecttabs @requires:nelim.pickletools.screenshotstudio
+@requires:nelim.pickletools.deffields @requires:nelim.pickletools.inspecttabs @requires:nelim.pickletools.screenshotstudio @requires:nelim.pickletools.camerazoom
 Feature: The two penguins are drawn and read correctly in game
 
   @review
   Scenario Outline: the adult <kind> spawns, selects and is drawn without error
     Given the save "test-colony" is loaded
     And I close all dialogs
-    When I spawn a "<kind>" pawn at (<x>, 150)
+    When Nelim's Pickle Tools: an adult animal of kind "<kind>" named "Adult <kind>" is spawned at (<x>, 150)
     And Nelim's Pickle Tools: I select the thing of def "<kind>" at (<x>, 150)
-    And I move the camera to (<x>, 150)
+    And Nelim's Pickle Tools: the camera is centered on "Adult <kind>" at root size 6
     Then I take a screenshot "penguins <kind> adult"
     And no errors were logged
 
@@ -29,7 +29,7 @@ Feature: The two penguins are drawn and read correctly in game
     Given the save "test-colony" is loaded
     And I close all dialogs
     And Nelim's Pickle Tools: an animal of kind "<kind>" named "Stage <kind>" is spawned at (<x>, 146) at the life stage "<stage>"
-    When I move the camera to (<x>, 146)
+    When Nelim's Pickle Tools: the camera is centered on "Stage <kind>" at root size 6
     Then I take a screenshot "penguins <kind> <stage>"
     And no errors were logged
 

@@ -1,7 +1,8 @@
 # Pass 1: the mod alone, with three PickleTools companions: InspectTabs (language-independent
 # "select the thing of def"), DefFieldSteps (def fields and biome lists as the game kept them) and
-# ScreenshotStudio (an animal spawned at a chosen life stage).
+# ScreenshotStudio (an animal spawned at a chosen life stage) and CameraZoom (the camera centred on a named animal).
 nelim.pickletools.inspecttabs path:PickleTools/InspectTabs/Mod
 nelim.pickletools.deffields path:PickleTools/DefFieldSteps/Mod
 nelim.pickletools.screenshotstudio path:PickleTools/ScreenshotStudio/Mod
+nelim.pickletools.camerazoom path:PickleTools/CameraZoom/Mod
 nelim.penguins path:PenguinsRenew/Mod

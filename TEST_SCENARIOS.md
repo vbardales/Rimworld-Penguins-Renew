@@ -33,3 +33,28 @@ loaded. Language scenarios run once in English and once in French.
 Automated, out of game, current files: `Check-XmlFields`, `Check-DefRefs` (with and without DLC data),
 `Check-DefInjected`, `Check-ConfigErrors`, `Check-TypeRefs`. They prove the XML maps to real fields and references,
 not behaviour; scenarios 1-23 do that.
+
+## Playtest verdicts, 2026-10-17
+
+Played by Pickle tickets (a session never launches the game). Revisions: `5f90ff4` initial pass, `d7d4ef6` for the log re-read. Evidence in `Tests/Pickle/Evidence/` (gitignored); one line per run in `docs/runs/history.md`.
+
+| # | Verdict | Basis |
+| --- | --- | --- |
+| 1 | played, green | `01-defs`: both races, both kinds, four eggs exist, no error |
+| 2, 3 | not applicable | stats are values written in XML, proved by `Check-XmlFields` and `Check-ConfigErrors`; a scenario would repeat them (`Tests/Pickle/README.md`) |
+| 4 | unverified | the effective Wildness stat in game has no step |
+| 5 | played, green | `01-defs`: the five cold biomes list both penguins |
+| 6, 7, 8, 9, 10 | not applicable | laying, hatching, egg temperature, nuzzling and training are vanilla comps that the mod only gives numbers to; the numbers are offline-checked |
+| 11 | unverified | no step makes the emperor carry a pack and turn; manual |
+| 12 | not applicable | the mod ships no audio: it names vanilla duck and goose sound defs, resolved by `Check-DefRefs` |
+| 13, 14 | played, green | `02-visuals` language scenarios in English and French |
+| 15 | not applicable | loading a save is the game's own behaviour (AUDIT.md, "On ne teste pas le jeu"); the save and reload of `03-persistence` is green |
+| 16 | unverified | README wording not re-read here |
+| 17 | unverified | no Giddy-Up 2 for 1.6 installed |
+| 18, 20 | played, green | passes without optional mods: no log line from either patch |
+| 19 | played, green | pass 2: both penguins offered categories 1 and 2, not 3 |
+| 21 | played, green | pass 3: both mods load, the original's wildness error is the documented symptom |
+| 22 | not applicable | no settings, verified in the sources |
+| 23 | played, green | `Player.log` of `d7d4ef6`: no error of this mod |
+
+The `@review` captures of `02-visuals` taken on `5f90ff4` proved nothing (the emperor a dark speck at default zoom, the chick not in frame): the scenarios now centre the camera on the animal at root size 6 and are replayed.
