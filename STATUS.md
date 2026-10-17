@@ -26,7 +26,7 @@ remaining:
   - "2026-10-17: unverified: the 23 scenarios of TEST_SCENARIOS.md not all played in game (eggs laid and hatched, nuzzling, training, pack facings, sounds, riding, new game, existing save); gallery @review captures belong to shootGallery"
   - "2026-10-16: feature: gallery plan in PUBLICATION.md and shoot script Tests/Pickle/Mod/Pickle/Features/gallery-penguin-shore.feature written, not run (shootGallery). Unverified in game: hairstyle Princess, Apparel_Parka dye, ITab_Pawn_Health, cell (90, 140). No step for kneel or crouch (Nelim stands)"
 code_review_sha: 2f517791c440fa451d4b7985fa8d5237f1062909
-protocols_read_sha: 7db1e37ab197dac63501eb0554896a23a4ac9fed
+protocols_read_sha: 7693bc9c57044ef5e155ba5216069f8320290a55
 updated: 2026-10-16
 ---
 ---
