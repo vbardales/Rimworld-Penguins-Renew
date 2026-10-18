@@ -50,3 +50,5 @@ Art/.render/
 # In-game test evidence (Pickle reports, captures, Player.log). Kept on disk only, never in git.
 Tests/Pickle/Evidence/
 evidence/
+Tests/Pickle/Inbox/
+Tests/Pickle/Parked/
