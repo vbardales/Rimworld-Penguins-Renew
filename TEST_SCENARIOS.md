@@ -45,7 +45,7 @@ Played by Pickle tickets (a session never launches the game). Revisions: `5f90ff
 | 4 | rewritten after a red run, ticket 20261018-181952-578-b645 pending | `06-wildness-and-pack`: effective Wildness of both adults is 0.15 (taming attempts not played); first run failed because the pawn stat step reads player pawns only |
 | 5 | played, green | `01-defs`: the five cold biomes list both penguins |
 | 6, 7, 8, 9, 10 | not applicable | laying, hatching, egg temperature, nuzzling and training are vanilla comps that the mod only gives numbers to; the numbers are offline-checked |
-| 11 | red for the owner, 2026-10-18 | the three pack textures are shipped and the pack is drawn on four facings (straps visible facing South on an enlarged capture), but Virginie sees the sack beside the emperor, not on its back: the pack textures are offset from the body, to decide (move the sack in the art or accept the original) |
+| 11 | played, green; owner accepted the art, 2026-10-18 | the three pack textures are shipped and the pack is drawn on four facings (straps visible facing South on an enlarged capture); the sack hangs behind the back, partly outside the body, and Virginie keeps the original author's art as is |
 | 12 | not applicable | the mod ships no audio: it names vanilla duck and goose sound defs, resolved by `Check-DefRefs` |
 | 13, 14 | played, green | `02-visuals` language scenarios in English and French |
 | 15 | not applicable | loading a save is the game's own behaviour (AUDIT.md, "On ne teste pas le jeu"); the save and reload of `03-persistence` is green |
