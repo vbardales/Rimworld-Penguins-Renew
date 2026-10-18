@@ -24,7 +24,7 @@ remaining:
   - "2026-10-17: red: ticket 20261017-141041-271-aaf1 (02-visuals EN, revision d9e8c3b) 1/8 passed. Six capture scenarios fail at step camera centered at root size 6: reads 11. Cause: the game bounds root size at 11 (PickleTools/CameraZoom/README.md, measured 2026-10-10), the suite asks 6, so it can never pass; fix = ask 11 in 02-visuals.feature (capture 5a086ab3 shows the penguin small at 11, a closer frame needs a PickleTools step). 'read in French' scenario failed because the ticket filter lacked `!@french` (filters in Tests/Pickle/README.md); not a mod defect. Evidence Tests/Pickle/Evidence/2026-10-17-visuals-en. Fixed (02-visuals.feature asks root size 11, uncommitted); small ticket 20261017-190558-590-d225 filed (02-visuals EN, filter `02-visuals,!@french`, evidence Tests/Pickle/Evidence/2026-10-17-visuals-en-11), waiting RUN_DONE"
   - "2026-10-16: feature: gallery plan in PUBLICATION.md and shoot script Tests/Pickle/Mod/Pickle/Features/gallery-penguin-shore.feature written, not run (shootGallery). Unverified in game: hairstyle Princess, Apparel_Parka dye, ITab_Pawn_Health, cell (90, 140). No step for kneel or crouch (Nelim stands)"
 code_review_sha: 2f517791c440fa451d4b7985fa8d5237f1062909
-protocols_read_sha: 7693bc9c57044ef5e155ba5216069f8320290a55
+protocols_read_sha: 2eac68a947ff9aebc01b323c25c6e357797115ed
 updated: 2026-10-17
 ---
 ---
