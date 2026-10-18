@@ -141,11 +141,11 @@
       <li>
         <bodyGraphicData>
           <texPath>Things/Pawn/Animal/Penguins/emperor_penguin</texPath>
-          <drawSize>2.5</drawSize>
+          <drawSize>2.25</drawSize>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
           <texPath>Things/Pawn/Animal/Penguins/Dessicated_Penguin</texPath>
-          <drawSize>2.5</drawSize>
+          <drawSize>2.25</drawSize>
         </dessicatedBodyGraphicData>
       </li>
       <li>

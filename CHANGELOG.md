@@ -13,6 +13,7 @@ The port's own presentation and packaging, all in this first release:
 - A generated colony Preview (896 x 504, title, summary, icon badge) and a 128 x 128 transparent ModIcon, both derived from the sources kept under `Art/`. Peso penguin's original Preview is not shipped; it survives only in the git history (commit `e754e1f`).
 - Optional patch for A Dog Said... Animal Prosthetics 2: both penguins can receive its animal surgeries (categories 1 and 2), with `loadBefore` in `About.xml`. No effect without that mod.
 - French egg descriptions are full sentences with an article.
+- `emperor_penguin`: the juvenile is drawn at 2.25 (it was 2.5, the adult's size), three quarters of the way from the baby (1.5) to the adult (2.5).
 - Final in-game validation remains pending.
 
 ### Fixed
