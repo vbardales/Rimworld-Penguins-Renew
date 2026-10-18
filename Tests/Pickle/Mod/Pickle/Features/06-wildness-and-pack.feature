@@ -15,7 +15,7 @@ Feature: The penguins read the wildness the def asks for and ship their pack tex
     Given the save "test-colony" is loaded
     And I close all dialogs
     When Nelim's Pickle Tools: an adult animal of kind "<kind>" named "Wild <kind>" is spawned at (<x>, 150)
-    Then "Wild <kind>" stat "Wildness" is 0.15
+    Then the "<kind>" at (<x>, 150) stat "Wildness" is 0.15
     And no errors were logged
 
     Examples:
