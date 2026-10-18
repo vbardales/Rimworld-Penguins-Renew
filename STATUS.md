@@ -24,7 +24,7 @@ remaining:
   - "2026-10-18: 02-visuals EN green at root size 11 (ticket d225, 7/7, Tests/Pickle/Evidence/2026-10-17-visuals-en-11); the earlier red aaf1 was the unreachable size 6 and a missing `!@french` filter, not a mod defect. The six captures still have to be opened as 8.d (adult emperor opened: small but readable, penguin visible)"
   - "2026-10-16: feature: gallery plan in PUBLICATION.md and shoot script Tests/Pickle/Mod/Pickle/Features/gallery-penguin-shore.feature written, not run (shootGallery). Unverified in game: hairstyle Princess, Apparel_Parka dye, ITab_Pawn_Health, cell (90, 140). No step for kneel or crouch (Nelim stands)"
 code_review_sha: 2f517791c440fa451d4b7985fa8d5237f1062909
-protocols_read_sha: 2eac68a947ff9aebc01b323c25c6e357797115ed
+protocols_read_sha: d6fb9fab25c8a5f6db73f5603f047ea46fd4f266
 updated: 2026-10-17
 ---
 ---
