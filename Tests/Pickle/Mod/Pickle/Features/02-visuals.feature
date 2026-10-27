@@ -5,7 +5,7 @@
 # Textures, life stages and the pack are read by a person from the attached captures: a green scenario
 # says the spawn and the capture happened, not that the picture is right (@review).
 
-@requires:nelim.pickletools.deffields @requires:nelim.pickletools.inspecttabs @requires:nelim.pickletools.screenshotstudio @requires:nelim.pickletools.camerazoom
+@requires:nelim.pickletools.deffields @requires:nelim.pickletools.inspecttabs @requires:nelim.pickletools.screenshotstudio @requires:nelim.pickletools.camerazoom @requires:nelim.pickletools.colonistrace
 Feature: The two penguins are drawn and read correctly in game
 
   @review
@@ -39,6 +39,27 @@ Feature: The two penguins are drawn and read correctly in game
       | king_penguin    | AnimalJuvenile | 145 |
       | emperor_penguin | AnimalBabyTiny | 148 |
       | emperor_penguin | AnimalJuvenile | 148 |
+
+  # The scenario above lets the animal wander before the capture and leaves the interface on screen: the small
+  # king stages end up a few pixels wide and off centre. Here the game is paused and the animal is held on its
+  # cell, facing South, so the original capture can be cropped at a known place and the drawing judged.
+  @review
+  Scenario Outline: the <stage> king_penguin stands still and is photographed for a close crop
+    Given the save "test-colony" is loaded
+    And I close all dialogs
+    And game speed is paused
+    And Nelim's Pickle Tools: studio presentation mode is enabled
+    And Nelim's Pickle Tools: the item and name labels are hidden
+    And Nelim's Pickle Tools: an animal of kind "king_penguin" named "Still <stage>" is spawned at (145, 146) at the life stage "<stage>"
+    And Nelim's Pickle Tools: the animal "Still <stage>" stands at (145, 146) facing South
+    When Nelim's Pickle Tools: the camera is centered on "Still <stage>" at root size 11
+    Then I take a screenshot "penguins king_penguin <stage> still"
+    And no errors were logged
+
+    Examples:
+      | stage          |
+      | AnimalBabyTiny |
+      | AnimalJuvenile |
 
   @english
   Scenario: the penguins and their eggs read in English
