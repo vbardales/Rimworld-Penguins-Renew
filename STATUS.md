@@ -26,7 +26,7 @@ remaining:
   - "2026-10-16: feature: gallery plan in PUBLICATION.md and shoot script Tests/Pickle/Mod/Pickle/Features/gallery-penguin-shore.feature written, not run (shootGallery). Unverified in game: hairstyle Princess, Apparel_Parka dye, ITab_Pawn_Health, cell (90, 140). No step for kneel or crouch (Nelim stands)"
   - "2026-11-02 replay-audit: first open 8.d (king crops unreadable, Virginie refused; NPT portrait step used, ticket 20261102-203921-053-332d queued at dc2142f, evidence to Tests/Pickle/Inbox/king-still-portrait; limit to record: game zoom floor = root size 11, baby 2x2 px, art read from portrait), then 8.f (Giddy-Up), 8.g (TESTING.md scenarios not all run), 8.l (Inbox king-still-crops unsorted), 8.m done 2026-11-02 (review of diff 2f51779..fd18a28: Preview.png exempt, emperor juvenile drawSize 2.5 to 2.25 body and dessicated, between juvenile 1.5 and adult 2.5, no defect; done by the session, 2-line diff, no Opus sub-agent). Check-Steps REQUIRES note: gallery-penguin-shore.feature lacks @requires:nelim.pickletools.inspecttabs (shootGallery, Tests/ not touched by replay)"
 code_review_sha: fd18a282288509213cd2030fd7cb65c9f440598c
-protocols_read_sha: a03dcfe2525258107c98e3ce1ce32a486456d4c3
+protocols_read_sha: 107069c4447c481f2d16c0fae0a48174424f7e6d
 updated: 2026-11-02
 ---
 ---
