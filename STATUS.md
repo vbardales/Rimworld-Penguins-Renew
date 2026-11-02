@@ -66,4 +66,4 @@ Verified in sources (XML and patches), revision at commit introducing this secti
 
 ## Session state — 2026-10-16
 
-Audit replayed to `playTests[1.0.0]`. Initial Pickle pass green at 5f90ff4, `eggUnfertilizedDef` defect fixed and verified at d7d4ef6, code review done (`code_review_sha`). Open: the 23 in-game scenarios of `TEST_SCENARIOS.md` and Giddy-Up 2. Session code `Pe`. Gallery plan and shoot script written for `shootGallery`, nothing captured.
+Audit replayed to `playTests[1.0.0]`. Initial Pickle pass green at 5f90ff4, `eggUnfertilizedDef` defect fixed and verified at d7d4ef6, code review done (`code_review_sha`). Open: the 23 in-game scenarios of `TEST_SCENARIOS.md` and Giddy-Up 2. Session code `Pen`. Gallery plan and shoot script written for `shootGallery`, nothing captured.
