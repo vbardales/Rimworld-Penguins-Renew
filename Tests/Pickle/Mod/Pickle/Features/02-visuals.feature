@@ -53,7 +53,7 @@ Feature: The two penguins are drawn and read correctly in game
     And Nelim's Pickle Tools: an animal of kind "king_penguin" named "Still <stage>" is spawned at (145, 146) at the life stage "<stage>"
     And Nelim's Pickle Tools: the animal "Still <stage>" stands at (145, 146) facing South
     When Nelim's Pickle Tools: the camera is centered on "Still <stage>" at root size 11
-    And Nelim's Pickle Tools: a portrait of "Still <stage>" is saved as "king-<stage>" at 640 pixels and zoom 1
+    And Nelim's Pickle Tools: a portrait of "Still <stage>" is saved as "king-<stage>" at 640 pixels and zoom 4
     Then I take a screenshot "penguins king_penguin <stage> still"
     And no errors were logged
 
