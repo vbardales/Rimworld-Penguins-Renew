@@ -5,7 +5,8 @@ repo: Rimworld-Penguins-Renew
 remote: https://github.com/vbardales/Rimworld-Penguins-Renew.git
 visibility: public
 detached: yes
-workflow_stage: declareDependencies[1.0.0]
+workflow_stage: settings[1.0.0]
+workshop_required_items: "n/a, no mandatory Workshop dependency (modDependencies absent from About.xml), checked 2026-11-10"
 licence: silent
 licence_at: "2026-09-13: source mod 3477589277 declares only 1.5, no licence in four places (files, About.xml, linked repository, Steam description); not an authorisation"
 upstream_mod_remotes: N/A
@@ -18,7 +19,7 @@ workshop: 3811404080
 published: unverified
 tested_on: "2026-10-16 Pickle 1.6: initial pass at 5f90ff4 (EN, FR, ADS 2, original) green; 01-defs EN at d7d4ef6 green after the eggUnfertilizedDef fix"
 remaining:
-  - "2026-11-10 replay-audit: stage moved back playTests to declareDependencies (4.b, 4.e, 4.g open). Mod/About/OptionalCompat.xml absent: declare ADS 2 (SamBucher.ADogSaidAnimalProsthetics2, 3238353862, kind patch) and Giddy-Up 2 (workshop id to verify, kind patch) for the two guarded patches; run Check-OptionalCompat.ps1 (it reports 0 targets today: script defect, it misses PatchOperationConditional on defs, told to Audit). 4.g: record the optional list from OptionalCompat.xml and `workshop_required_items: n/a, no mandatory Workshop dependency`. Then replay: playTests proofs (8.c to 8.m) stay as recorded, 8.d king close crop and 8.f Giddy-Up still open"
+  - "2026-11-10 replay-audit: stage went back playTests to declareDependencies (4.b, 4.e, 4.g open: no OptionalCompat.xml), fixed same day, now settings[1.0.0]. Mod/About/OptionalCompat.xml declares SamBucher.ADogSaidAnimalProsthetics2 (3238353862, patch) and Owlchemist.GiddyUp (2934245647, patch; packageId from memory, no local install, unverified; the 2934420800 first noted is Prepatcher, wrong). Check-OptionalCompat reports 0 patched targets, 2 declared, INFO only (Audit: script cannot see Conditional on defs, documented). Not yet replayed: sections 5 to 8 (settings, localize, writeTests, playTests proofs); next replay starts there. 8.d king close crop and 8.f Giddy-Up still open"
   - "2026-10-15: unverified: Giddy-Up 2 Pickle pass not written, no 1.6 Giddy-Up installed"
   - "2026-10-18: 06-wildness-and-pack: 9/9 green in substance. Ticket 2a85 at 6def4b5: 7/9, three pack textures shipped, four pack captures read (pack drawn on all four facings; the sack hangs behind the back, partly outside the body, Virginie keeps the original art; scenario 11 green), two wildness scenarios red from the pawn stat step. Fixed with the thing-at-cell step, ticket b645 green 2/2 (Tests/Pickle/Evidence/2026-10-18-wildness). Juvenile emperor drawn at 2.25 on her request (dc55fe4, code change: `code_review_sha` to redo at the end of playTests), checked by ticket 1766 (02-visuals EN facing South) green 7/7. No assertion of the drawn Pack texture (NPT did not write it). Run folder 2026-10-17-wildness-pack no longer exists (Inbox triaged 2026-10-19)"
   - "2026-11-03 resume 7b: Preview re-rendered with echo defaults (Render-Preview.cjs), output byte-identical to committed Preview.png (2026-10-27). Echo overlaps the copy lines (touches \"maps.\" and \"Pets\") and leaves the panel edge: owner dropped the question (2026-11-03), Preview left as committed"
@@ -29,7 +30,7 @@ remaining:
   - "2026-11-02 replay-audit: first open 8.d (king crops unreadable, Virginie refused; NPT portrait step used, ticket 20261102-203921-053-332d queued at dc2142f, evidence to Tests/Pickle/Inbox/king-still-portrait; limit to record: game zoom floor = root size 11, baby 2x2 px, art read from portrait; update 2026-11-02: NPT probe 38f0 green 2/2, SimpleCameraSetting works at root size 1 and 0.5 (evidence PickleTools/Tests/Pickle/Inbox/camerazoom-low-1), so the root size 11 floor is lifted and a close baby king crop is possible once ticket 332d reports), then 8.f (Giddy-Up), 8.g (TESTING.md scenarios not all run), 8.l (Inbox king-still-crops unsorted), 8.m done 2026-11-02 (review of diff 2f51779..fd18a28: Preview.png exempt, emperor juvenile drawSize 2.5 to 2.25 body and dessicated, between juvenile 1.5 and adult 2.5, no defect; done by the session, 2-line diff, no Opus sub-agent). Check-Steps REQUIRES note: gallery-penguin-shore.feature lacks @requires:nelim.pickletools.inspecttabs (shootGallery, Tests/ not touched by replay)"
   - "2026-11-10 resume: Preview.config.json (uncommitted grouped-format rewrite) rendered and committed 5b462a4: keys `titleSize` and `copyLines` and `titleParts` Renew/(unofficial) pair replaced by `description` string and one `suffix` part, `backgroundFile` renamed `background`; render now has the echo clear of the copy, no clipping. FRENCH_REVIEW.md renamed TRANSLATION_REVIEW.md (regenerated). King ticket 332d run (Inbox king-still-portrait) read and deleted: green 2/2 but both captures are the whole-map 1920x1080 view (baby invisible, juvenile a 3 px dot), no close crop, proves nothing. 8.d still open: needs a new ticket with SimpleCameraSetting root size 1 or 0.5 (NPT probe 38f0). Inbox king-still-crops kept until Virginie's verdict"
 code_review_sha: fd18a282288509213cd2030fd7cb65c9f440598c
-protocols_read_sha: 726dcfee21f2eceb8d7acfc590531d52aad4b0b7
+protocols_read_sha: 9e7a8566fa4608136bbc1272adc5c8e504d63b1b
 updated: 2026-11-10
 ---
 ---
@@ -62,6 +63,7 @@ Verified in sources (XML and patches), revision at commit introducing this secti
 - **Dogs mate (not applied):** 1.6 groups cover Canidae, Felidae, Rodentia, Mammalia only, no bird group, so no group can hold penguin.
 - **Better Crossbreeding (not applied):** king x emperor pairing declined by owner (Virginie, 2026-10-17): no hybrid race, no patch.
 - DLC and `supportedVersions`: 1.6 only, no `LoadFolders.xml`.
+- **Optional compat list (2026-11-10, `Mod/About/OptionalCompat.xml`):** A Dog Said... Animal Prosthetics 2 (3238353862, patch), Giddy-Up 2 (2934245647, patch). Workshop required items: n/a, no mandatory dependency.
 
 ## Historical audit
 
