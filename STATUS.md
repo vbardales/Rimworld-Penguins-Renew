@@ -5,7 +5,7 @@ repo: Rimworld-Penguins-Renew
 remote: https://github.com/vbardales/Rimworld-Penguins-Renew.git
 visibility: public
 detached: yes
-workflow_stage: playTests[1.0.0]
+workflow_stage: declareDependencies[1.0.0]
 licence: silent
 licence_at: "2026-09-13: source mod 3477589277 declares only 1.5, no licence in four places (files, About.xml, linked repository, Steam description); not an authorisation"
 upstream_mod_remotes: N/A
@@ -18,6 +18,7 @@ workshop: 3811404080
 published: unverified
 tested_on: "2026-10-16 Pickle 1.6: initial pass at 5f90ff4 (EN, FR, ADS 2, original) green; 01-defs EN at d7d4ef6 green after the eggUnfertilizedDef fix"
 remaining:
+  - "2026-11-10 replay-audit: stage moved back playTests to declareDependencies (4.b, 4.e, 4.g open). Mod/About/OptionalCompat.xml absent: declare ADS 2 (SamBucher.ADogSaidAnimalProsthetics2, 3238353862, kind patch) and Giddy-Up 2 (workshop id to verify, kind patch) for the two guarded patches; run Check-OptionalCompat.ps1 (it reports 0 targets today: script defect, it misses PatchOperationConditional on defs, told to Audit). 4.g: record the optional list from OptionalCompat.xml and `workshop_required_items: n/a, no mandatory Workshop dependency`. Then replay: playTests proofs (8.c to 8.m) stay as recorded, 8.d king close crop and 8.f Giddy-Up still open"
   - "2026-10-15: unverified: Giddy-Up 2 Pickle pass not written, no 1.6 Giddy-Up installed"
   - "2026-10-18: 06-wildness-and-pack: 9/9 green in substance. Ticket 2a85 at 6def4b5: 7/9, three pack textures shipped, four pack captures read (pack drawn on all four facings; the sack hangs behind the back, partly outside the body, Virginie keeps the original art; scenario 11 green), two wildness scenarios red from the pawn stat step. Fixed with the thing-at-cell step, ticket b645 green 2/2 (Tests/Pickle/Evidence/2026-10-18-wildness). Juvenile emperor drawn at 2.25 on her request (dc55fe4, code change: `code_review_sha` to redo at the end of playTests), checked by ticket 1766 (02-visuals EN facing South) green 7/7. No assertion of the drawn Pack texture (NPT did not write it). Run folder 2026-10-17-wildness-pack no longer exists (Inbox triaged 2026-10-19)"
   - "2026-11-03 resume 7b: Preview re-rendered with echo defaults (Render-Preview.cjs), output byte-identical to committed Preview.png (2026-10-27). Echo overlaps the copy lines (touches \"maps.\" and \"Pets\") and leaves the panel edge: owner dropped the question (2026-11-03), Preview left as committed"
